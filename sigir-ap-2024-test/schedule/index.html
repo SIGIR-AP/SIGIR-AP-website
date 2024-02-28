@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>SIGIR-AP 2023</title>
+    <style>
+      @media only screen and (max-width: 600px) {
+        .mobile-only {
+          display: block;
+        }
+        .desktop-only {
+          display: none;
+        }
+      }
+      @media only screen and (min-width: 601px) {
+        .mobile-only {
+          display: none;
+        }
+        .desktop-only {
+          display: block;
+        }
+      }
+    </style>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="The 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval">
+<meta name="description" content="The 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval">
+<meta name="author" content="">
+
+
+
+<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/sigir-ap-2023//assets/css/style.css">
+
+<link rel="stylesheet" href="/sigir-ap-2023//assets/css/header-v2.css">
+<link rel="stylesheet" href="/sigir-ap-2023//assets/css/header-v3.css">
+<link rel="stylesheet" href="/sigir-ap-2023//assets/css/footer-v1.css">
+<link rel="stylesheet" href="/sigir-ap-2023//assets/css/portrait.css">
+<link rel="stylesheet" href="/sigir-ap-2023//assets/css/big-list.css">
+<link rel="stylesheet" href="/sigir-ap-2023//assets/css/page_404_error.css">
+
+
+<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/animate.css">
+<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/line-icons/line-icons.css">
+<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/parallax-slider/css/parallax-slider.css">
+<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/fancybox/source/jquery.fancybox.css">
+<link rel="stylesheet" href="/sigir-ap-2023//assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+
+
+
+<link rel="stylesheet" href="/sigir-ap-2023//assets/css/shortcode_timeline2.css">
+<link rel="stylesheet" href="/sigir-ap-2023//assets/css/blue.css">
+<link rel="stylesheet" href="/sigir-ap-2023//assets/css/custom1.css">
+    <style>
+        html {
+            background-color: #000;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .bg-fff {
+            background-color: #fff;
+        }
+
+        .bg-yellow {
+            background-color: yellow;
+        }
+
+        .bg-ffe599 {
+            background-color: #ffe599;
+        }
+
+        .bg-title {
+            background: #d9ead3
+        }
+
+        .bg-8db5f8 {
+            background-color: #8db5f8;
+        }
+
+        .bg-fef1cc {
+            background-color: #fef1cc;
+        }
+
+        .bg-b4e4e8 {
+            background-color: #b4e4e8;
+        }
+
+        .bg-fff2cc {
+            background-color: #fff2cc;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            text-align: center;
+            color: #000;
+        }
+    .iframe-container {
+      width: 100%;
+      height: 180vh;
+      overflow: hidden;
+      position: relative;
+      border: none;
+    }
+    .iframe-container iframe {
+      width: 200%;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: -50%;
+      transform: scale(0.5);
+      transform-origin: left top;
+      pointer-events: none;
+    }
+    </style>
+</head>
+
+<body class="header-fixed">
+    <div class="wrapper" style="min-height: 800px">
+        <!--=== Header===-->
+        <div class="header-v2 header-sticky">
+            <div class="container container-space"></div>
+            <!-- Navbar -->
+            <div class="navbar navbar-default mega-menu" role="navigation">
+    <div class="container container-space">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fa fa-bars"></span>
+            </button>
+            <a class="navbar-brand brand-style" href="/sigir-ap-2023//">
+                <img id="logo-header" src="/sigir-ap-2023//assets/img/SIGIR-AP_2023_LOGO.png" width="85" alt="Logo">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <!--
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Program</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/sigir-ap-2023//program-at-a-glance">Program at a Glance</a></li>
+                        <li><a href="/sigir-ap-2023//schedule">Program Schedule</a></li>
+                        <li><a href="/sigir-ap-2023//tutorial">Tutorial</a></li>
+                        <li><a href="/sigir-ap-2023//booklets">Booklets</a></li>
+                        <li><a href="/sigir-ap-2023//keynotes">Keynotes and Panel</a></li>
+                        <li><a href="/sigir-ap-2023//tutorials">Tutorials</a></li>
+                        <li><a href="/sigir-ap-2023//workshops">Workshops</a></li>
+                        <li><a href="/sigir-ap-2023//doctoral-consortium">Doctoral Consortium</a></li>
+                        <li><a href="/sigir-ap-2023//industry-track-schedule">Industry Track</a></li>
+                        <li><a href="/sigir-ap-2023//summer-school">Summer School</a></li>
+                        <li><a href="http://sigir.org/women-in-ir/sigir2020.html">Women-in-IR</a></li>
+                        <li><a href="/sigir-ap-2023//student-event">Student Event</a></li>
+                        <li><a href="/sigir-ap-2023//accepted-papers">Accepted Papers</a></li>
+                    </ul>
+                </li>
+                -->
+                <!--
+                <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Attend</a>
+                        <ul class="dropdown-menu">                            
+                            <li><a href="https://sigir-schedule.baai.ac.cn/">Virtual Conference Portal</a></li>
+                            <li><a href="/sigir-ap-2023//registration">Registration</a></li>
+                            <li><a href="/sigir-ap-2023//presentation-instructions">Presentation Instructions</a></li>
+                            <li><a href="/sigir-ap-2023//call-for-volunteers">Call for Volunteers</a></li>
+                        <li><a href="/sigir-ap-2023//presentation-instructions">Presentation Instructions</a></li>
+                        <li><a href="/sigir-ap-2023//keynote-speaker">Keynote</a></li>
+                            <li><a href="/sigir-ap-2023//travel-grants">Travel Grants</a></li>
+                            <li><a href="/sigir-ap-2023//visa-information">Visa Information</a></li>
+                            <li><a href="/sigir-ap-2023//accommodation">Accommodation</a></li>
+                            <li><a href="/sigir-ap-2023//travel">Travel</a></li>
+                            <li><a href="/sigir-ap-2023//venue">Venue</a></li>
+                        </ul>
+                </li>
+                -->
+                <li class=""><a href="/sigir-ap-2023/" class="">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Calls</a>
+                    <ul class="dropdown-menu">
+                        <!--<li><a href="list-of-calls">List of calls</a></li>-->
+                        <li><a href="/sigir-ap-2023//call-for-papers">Call for Papers</a></li>
+                        <li><a href="/sigir-ap-2023//call-for-tutorials">Call for Tutorials</a></li>
+                        <!-- <li><a href="/sigir-ap-2023//call-for-workshop-proposals">Call for Workshop Proposals</a></li> -->
+                        <li><a href="/sigir-ap-2023//guidance-for-authors">Guidance for Authors</a></li>
+                        <!--<li><a href="/sigir-ap-2023//call-for-tutorials">Call for Tutorials</a></li>
+                        <li><a href="/sigir-ap-2023//call-for-workshops">Call for Workshops</a></li>
+                        <li><a href="/sigir-ap-2023//call-for-demonstration">Call for Demonstrations</a></li>
+                        <li><a href="/sigir-ap-2023//call-for-doctoral-consortium-papers">Call for Doctoral Consortium Papers</a></li>
+                        <li><a href="/sigir-ap-2023//call-for-industry-track-papers">Call for Industry Track Papers</a></li>
+                        -->
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Attend</a>
+                    <ul class="dropdown-menu">
+                        <!--<li><a href="list-of-calls">List of calls</a></li>-->
+
+                        <li><a href="/sigir-ap-2023//accommodation">Accommodation</a></li>
+                        <li><a href="/sigir-ap-2023//bestpaper-award">Best Paper Award</a></li>
+                        <li><a href="/sigir-ap-2023//call-for-volunteers">Call for Volunteers</a></li>
+                        <li><a href="/sigir-ap-2023//keynote-speaker">Keynote</a></li>
+                        <li><a href="/sigir-ap-2023//presentation-instructions">Presentation Instructions</a></li>
+                        <li><a href="/sigir-ap-2023//accepted-papers">Proceedings</a></li>  
+                        <li><a href="/sigir-ap-2023//schedule">Program Schedule</a></li>                      <li><a href="/sigir-ap-2023//registration">Registration</a></li>
+                        <li><a href="/sigir-ap-2023//tutorial">Tutorial</a></li>
+                        <li><a href="/sigir-ap-2023//venue">Venue</a></li>
+                        <li><a href="/sigir-ap-2023//visa-information">VISA Information</a></li>
+                        <li><a href="/sigir-ap-2023//visiting">Visiting Beijing</a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="/sigir-ap-2023//important-dates" class="">Important Dates</a></li>
+                <li class=""><a href="/sigir-ap-2023//organizers" class="">Organizers</a></li>
+                
+                <!-- <li class=""><a href="/sigir-ap-2023//call-for-sponsors" class="">Sponsors</a></li> -->
+
+                
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Sponsors</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/sigir-ap-2023//call-for-sponsors">Call for sponsors</a></li>
+                        <!-- <li><a href="/sigir-ap-2023//list-of-sponsors">List of sponsors</a></li> -->
+                    </ul>
+                </li>
+                
+                
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+            <!-- End Navbar -->
+        </div>
+        <!--=== End Header ===-->
+        <script type="text/javascript">
+    //Get Banner image by random
+    var n = Math.floor(Math.random() * 12 + 1);
+    document.write('<div class="interactive-slider-v2" style="background-image:url(\'/sigir-ap-2023//assets/img/main-banners/main-banners_' + n + '.jpg\')">');
+</script>
+
+        <div class="container">
+            <h1 class="animated fadeInUp">Program Schedule</h1>
+        </div>
+    </div>
+
+    <div class="bg-color-white">
+        <div class="container content-xs">
+            <div class="news-v3 margin-bottom-30">
+                <div class="news-v3-in" style="box-sizing:border-box;min-width:100px;overflow: hidden;">
+                    <h2><strong>Schedule for SIGIR-AP 2023</strong></h2>
+                    <h4><strong><a href="/sigir-ap-2023//assets/files/SIGIR_AP_23.pdf ">Download Program Book</a></strong></h4>
+                    <iframe src="/sigir-ap-2023//assets/frames/schedule.htm" width="130%" height="800px" style="border: none; transform: scale(0.8); transform-origin: top left;padding:0;margin-right: -1000px;margin-left: -0px;margin-bottom: -165px;" class="desktop-only"> </iframe>
+                    <iframe src="/sigir-ap-2023//assets/frames/schedule-mob.htm" width="112%" height="1700px" style="border: none; transform: scale(0.9); transform-origin: top left;padding:0;margin-right: -1000px;margin-left: -0px;margin-bottom: -150px;" class="mobile-only"> </iframe>
+                    
+                    <!--img src="/sigir-ap-2023//assets/img/schedule/day1.png" class="mobile-only" width="100%"/>
+                    <img src="/sigir-ap-2023//assets/img/schedule/day2.png" class="mobile-only" width="100%"/>
+                    <img src="/sigir-ap-2023//assets/img/schedule/day3.png" class="mobile-only" width="100%"/-->
+                    <h2><strong>Map</strong></h2>
+                    <img class="img-responsive" src="/sigir-ap-2023//assets/img/schedule/map.jpg" style="width: 100%; margin-top: 2%;">
+                
+                    <h2><strong>Sessions</strong></h2>
+                    <div class="row">
+                        <div class="accepted-papers-lists" style="margin-left: 30px;">
+                    
+                            <h3><strong>Sessions 1 : Conversational Search</strong> </h3>
+                                <h3 style="margin-left: 40px;"><strong>Chair : Keping Bi</strong></h3>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Users Meet Clarifying Questions: Toward a Better Understanding of User Interactions for Search Clarification(TOIS)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Jie, Zou; Aliannejadi, Mohammad; Kanoulas, Evangelos; Pera, Maria Soledad; Yiqun, Liu</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">A Comparative Study of Training Objectives for Clarification Facet Generation</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Shiyu Ni, Keping Bi, Jiafeng Guo and Xueqi Cheng</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Retrieving Supporting Evidence for Generative Question Answering</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Siqing Huo, Negar Arabzadeh and Charles Clarke</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Recommending Answers to Math Questions Based on KL-Divergence and Approximate XML Tree Matching (Virtual)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Siqi Gao and Yiu-Kai Ng</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Ethical Alignment Meets Conversational Information Retrieval</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Yiyao Yu, Junjie Wang, Yuxiang Zhang, Lin Zhang, Yujiu Yang and Tetsuya Sakai</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Open-Domain Dialogue Quality Evaluation: Deriving Nugget-level Scores from Turn-level Scores</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Rikiya Takehi, Akihisa Watanabe and Tetsuya Sakai</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">ChatGPT Hallucinates when Attributing Answers (Virtual)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Guido Zuccon, Bevan Koopman and Razia Shaik</h5>
+                    
+                            <h3><strong>Sessions 2 : Domains & Applications</strong></h3>
+                                <h3 style="margin-left: 40px;"><strong>Chair : Jieming Zhu</strong></h3>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Multimodal Fashion Knowledge Extraction as Captioning</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Yifei Yuan, Wenxuan Zhang, Yang Deng and Wai Lam</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Chuweb21D: A Deduped English Document Collection for Web Search Tasks</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Zhumin Chu, Tetsuya Sakai, Qingyao Ai and Yiqun Liu</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Generating Natural Language Queries for More Effective Systematic Review Screening Prioritisation (Virtual)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Shuai Wang, Harrisen Scells, Bevan Koopman, Martin Potthast and Guido Zuccon</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Examination of Information Problem Decomposition Strategies: A New Perspective for Understanding Users’ Information Problems in Search as Learning</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Xiaoyue Zhang and Chang Liu</h5>
+                                
+                            <h3><strong>Sessions 3 : Learning & Ranking</strong></h3>
+                                <h3 style="margin-left: 40px;"><strong>Chair : Charles Clarke</strong></h3>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Few-Shot Aspect Category Sentiment Analysis via Meta-Learning(TOIS)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Bin, Liang; Xiang, Li; Lin, Gui; Yonghao, Fu; Yulan, He; Min, Yang; Ruifeng, Xu</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">RFR: Representation-Focused Replay for Overcoming the Catastrophic Forgetting in Lifelong Language Learning</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Zhongyuan Han, Zeyang Peng, Leilei Kong, Zhanhong Ye, Mingjie Huang and Haoliang Qi</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Towards Sequential Counterfactual Learning to Rank (Virtual)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Tesi Xiao, Branislav Kveton, Sumeet Katariya, Tanmay Gangwani and Anshuka Rangi</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Unbiased Top-k Learning to Rank with Causal Likelihood Decomposition</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Haiyuan Zhao, Jun Xu, Xiao Zhang, Guohao Cai, Zhenhua Dong and Ji-Rong Wen</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Annotating Data for Fine-Tuning a Neural Ranker? Current Active Learning Strategies are not Better than Random Selection</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Sophia Althammer, Guido Zuccon, Sebastian Hofstätter, Suzan Verberne and Allan Hanbury</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Enhancing Sparse Retrieval via Unsupervised Learning</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Xueguang Ma, Hengxin Fun, Xusen Yin, Antonio Mallia and Jimmy Lin</h5>
+                                
+                            <h3><strong>Industry Talk : Innovation Practices in Xiaohongshu Search </strong></h3>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Search engines play a crucial role in bridging the connection between users and content. Compared to traditional search engines, the search engine of Xiaohongshu, due to its extensive topic coverage, strong long-tail effect and various content modality, emphasizes the importance of semantic understanding as a key technical element. This presentation will encompass our technological achievements in multimodal semantic understanding and how these technology is applied to practical scenarios such as indexing, retrieval, and ranking in the search engine of Xiaohongshu.</h5>
+
+                            <h3><strong>Sessions 4 : Legal / Indexing</strong></h3>
+                                <h3 style="margin-left: 40px;"><strong>Chair : Zhaochun Ren</strong></h3>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Understanding Relevance Judgments in Legal Case Retrieval(TOIS)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Yunqiu, Shao; Yueyue, Wu; Yiqun, Liu; Jiaxin, Mao; Shaoping, Ma</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Result Diversification for Legal case Retrieval</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Ruizhe Zhang, Qingyao Ai, Yueyue Wu, Yixiao Ma and Yiqun Liu</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Investigating the Influence of Legal Case Retrieval Systems on Users' Decision Process</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Beining Wang, Ruizhe Zhang, Yueyue Wu, Qingyao Ai, Min Zhang and Yiqun Liu</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Boosting legal case retrieval by query content selection with large language models</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Youchao Zhou, Heyan Huang and Zhijing Wu</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Lossy Compression Options for Dense Index Retention (Virtual)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Joel Mackenzie and Alistair Moffat</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Understanding Item Indexing Methods for Recommendation Foundation Models (Virtual)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Wenyue Hua, Shuyuan Xu, Yingqiang Ge and Yongfeng Zhang</h5>
+                            <h3><strong>Sessions 5 : Neural / Fairness</strong></h3>
+                                <h3 style="margin-left: 40px;"><strong>Chair : Jun Xu</strong></h3>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Complex-valued Neural Network based Quantum Language Models(TOIS)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Peng, Zhang; Wenjie, Hui; Benyou, Wang; Donghao, Zhao; Dawei, Song; Lioma, Christina; Simonsen, Jakob</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Bridging the Gap Between Universal and Segmentation-specific Representation: Adaptive Learning on User Segmentation with Bipartite Neural Interaction</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Xiaoyu Tan, Yongxin Deng, Chao Qu, Siqiao Xue, Xiaoming Shi, James Zhang and Xihe Qiu</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Typos-aware Bottlenecked Pre-Training for Robust Dense Retrieval (Virtual)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Shengyao Zhuang, Linjun Shou, Jian Pei, Ming Gong, Houxing Ren, Guido Zuccon and Daxin Jiang</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Selecting which Dense Retriever to use for Zero-Shot Search (Virtual)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Ekaterina Khramtsova, Shengyao Zhuang, Mahsa Baktashmotlagh, Xi Wang and Guido Zuccon</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Vertical Allocation-based Fair Exposure Amortizing in Ranking (Virtual)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Tao Yang, Zhichao Xu and Qingyao Ai</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Automatic Feature Fairness in Recommendation via Adversaries</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Hengchang Hu, Yiming Cao, Zhankui He, Samson Tan and Min-Yen Kan</h5>
+                            <h3><strong>Sessions 6 : Recommendation</strong></h3>
+                                <h3 style="margin-left: 40px;"><strong>Chair : Weizhi Ma</strong></h3>
+                                <!--h4 class="accepted-papers-title" style="margin-left: 40px;">KR-GCN: Knowledge-aware Reasoning with Graph Convolution Network for Explainable Recommendation(TOIS)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Ma, Ting; Huang, Longtao; Lu, Qianqian; Hu, Songlin</h5-->
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">A Generic Federated Recommendation Framework via Fake Marks and Secret Sharing(TOIS)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Zhaohao, Lin; Weike, Pan; Qiang, Yang; Zhong, Ming</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Sequential Recommendation with User Evolving Preference Decomposition</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Weiqi Shao, Jiashu Zhao, Long Xia, Jingsen Zhang and Dawei Yin</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">User-Meal Interaction Learning for Meal Recommendation: A Reproducibility Study</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Ming Li, Lin Li, Xiaohui Tao and Ning Zhong</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Multi-Behavior Job Recommendation with Dynamic Availability (Virtual)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Yosuke Saito and Kazunari Sugiyama</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">AdaReX: Cross-Domain, Adaptive, and Explainable Recommender System (Virtual)</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Yi Yu, Kazunari Sugiyama and Adam Jatowt</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">Reinforcement Re-ranking with 2D Grid-based Recommendation Panels</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Sirui Chen, Xiao Zhang, Xu Chen, Zhiyu Li, Yuan Wang, Quan Lin and Jun Xu</h5>
+                                <h4 class="accepted-papers-title" style="margin-left: 40px;">SE-PEF: a Resource for Personalized Expert Finding</h4>
+                                <h5 class="accepted-papers-authors" style="margin-left: 40px;">Pranav Kasela, Gabriella Pasi and Raffaele Perego</h5>
+                        </div>
+                    </div>
+                    <h2><strong>Banquet (Jingweizhai Roasted Duck Restaurant)</strong></h2>
+                    <a href="https://surl.amap.com/1lsGlXyP1y1fz">高德地图</a><br>
+                    <a href="https://maps.app.goo.gl/GdCRVXzaLTGb2K266">Google Map</a>
+                    <img class="img-responsive" src="/sigir-ap-2023//assets/img/schedule/JWZ.png" style="width: 100%; margin-top: 2%;">
+
+                    
+
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--/end container-->
+    </div>
+    </div>
+    <!--=== End Content ===-->
+    <!--=== Footer ===-->
+    <div class="purchase bg-grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+               <div class="col-md-5 col-xs-12">
+                   <div class="row">
+                       <div class="col-md-4 col-xs-4">
+                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/acm.png" style="width: 105%; margin-top: 15%;">
+                       </div>
+                       <div class="col-md-4 col-xs-4">
+                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/sigir.png" style="width: 80%; margin-top: 10%; margin-left: 10%;">
+                       </div>
+                       <div class="col-md-4 col-xs-4">
+                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/xhs.png" style="width: 90%; margin-top: 10%; margin-left: 10%;">
+                       </div>
+                   </div>
+               </div>
+
+               <div class="col-md-7 col-xs-12">
+                   <div class="row">
+                       <div class="col-md-3 col-xs-3">
+                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/zhipu.jpg" style="width: 90%; margin-top: 10%; margin-left: 10%;">
+                       </div>
+                       <div class="col-md-3 col-xs-3">
+                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/kuaishou.jpg" style="width: 70%; margin-top: 10%; margin-left: 10%;">
+                       </div>
+                       <div class="col-md-2 col-xs-3">
+                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/thu.jpg" style="width: 80%; margin-top: 10%; margin-left: 10%;">
+                       </div>
+                       <div class="col-md-2 col-xs-3">
+                           <img class="img-responsive" src="/sigir-ap-2023//assets/img/logos/MelbourneU.png" style="width: 80%; margin-top: 10%; margin-left: 10%;">
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!--Logos END-->
+       </div>
+   </div>
+</div>
+<!--=== End Content ===-->
+<div class="footer-v1">
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        2023 &copy; <a href="#">SIGIR-AP 2023</a> All Rights Reserved.
+                    </p>
+                </div>
+
+                <!-- Social Links -->
+                <!-- <div class="col-md-6">
+                    <ul class="footer-socials list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/sigir2020/" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                data-original-title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/sigir2020" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                data-original-title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+                <div class="col-md-6">
+                    <p>
+                        contact: lc2023@sigir-ap.org
+                    </p>
+                </div>
+                <!-- End Social Links -->
+            </div>
+        </div>
+    </div>
+    <!--/copyright-->
+</div>
+
+    <!--=== End Footer ===-->
+
+    <!--=== Scripts ===-->
+    <!-- JS Global Compulsory -->
+<script type="text/javascript" src="/sigir-ap-2023//assets/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/sigir-ap-2023//assets/plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="/sigir-ap-2023//assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="/sigir-ap-2023//assets/plugins/back-to-top.js"></script>
+<script type="text/javascript" src="/sigir-ap-2023//assets/plugins/jquery-smooth-scroll/jquery.smooth-scroll.js"></script>
+<!-- // <script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script>
+// <script type="text/javascript" src="assets/plugins/parallax-slider/js/modernizr.js"></script>
+// <script type="text/javascript" src="assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+// <script type="text/javascript" src="assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+// <script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script> -->
+
+
+<!-- JS Customization -->
+<script type="text/javascript" src="/sigir-ap-2023//assets/js/custom.js"></script>
+<!-- JS Page Level -->
+<script type="text/javascript" src="/sigir-ap-2023//assets/js/app.js"></script>
+<!-- //
+// <script type="text/javascript" src="assets/js/plugins/fancy-box.js"></script>
+// <script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script> -->
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+      	App.init();
+//         App.initParallaxBg();
+//         FancyBox.initFancybox();
+//         OwlCarousel.initOwlCarousel();
+});
+</script>
+
+<style id="Schedule SIGIR-AP 2023 public_22675_Styles">
+    <!--table
+        {mso-displayed-decimal-separator:"\.";
+        mso-displayed-thousand-separator:"\,";}
+    @page
+        {margin:.75in .7in .75in .7in;
+        mso-header-margin:.3in;
+        mso-footer-margin:.3in;}
+    .font5
+        {color:windowtext;
+        font-size:9.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:等线;
+        mso-generic-font-family:auto;
+        mso-font-charset:134;}
+    tr
+        {mso-height-source:auto;
+        mso-ruby-visibility:none;}
+    col
+        {mso-width-source:auto;
+        mso-ruby-visibility:none;}
+    br
+        {mso-data-placement:same-cell;}
+    .style0
+        {text-align:general;
+        vertical-align:bottom;
+        white-space:nowrap;
+        mso-rotate:0;
+        mso-style-name:常规;
+        mso-style-id:0;}
+    td
+        {mso-style-parent:style0;
+        padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:10.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:等线;
+        mso-generic-font-family:auto;
+        mso-font-charset:134;
+        mso-number-format:General;
+        text-align:general;
+        vertical-align:middle;
+        border:none;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        mso-protection:locked visible;
+        white-space:nowrap;
+        mso-rotate:0;}
+    .xl63
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        border:none;}
+    .xl64
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        vertical-align:top;
+        border:none;
+        background:#FCE4D6;
+        mso-pattern:black none;}
+    .xl65
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        border:none;
+        background:#FCE4D6;
+        mso-pattern:black none;}
+    .xl66
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        vertical-align:top;
+        border:none;
+        background:#FCE4D6;
+        mso-pattern:black none;
+        white-space:normal;}
+    .xl67
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        vertical-align:top;
+        border:none;
+        background:#FCE4D6;
+        mso-pattern:black none;
+        white-space:normal;}
+    .xl68
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        border:none;
+        background:#E2EFDA;
+        mso-pattern:black none;}
+    .xl69
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        vertical-align:top;
+        border:none;
+        background:#E2EFDA;
+        mso-pattern:black none;
+        white-space:normal;}
+    .xl70
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        vertical-align:top;
+        border:none;
+        background:#E2EFDA;
+        mso-pattern:black none;
+        white-space:normal;}
+    .xl71
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        vertical-align:top;
+        border:none;
+        background:#FCE4D6;
+        mso-pattern:black none;
+        white-space:normal;}
+    .xl72
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        vertical-align:top;
+        border:none;
+        background:#FCE4D6;
+        mso-pattern:black none;}
+    .xl73
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        vertical-align:top;
+        border:none;
+        background:#E2EFDA;
+        mso-pattern:black none;}
+    .xl74
+        {mso-style-parent:style0;
+        border:none;}
+    .xl75
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        text-align:right;
+        border:none;}
+    .xl76
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        text-align:right;
+        vertical-align:top;
+        border:none;
+        background:#FCE4D6;
+        mso-pattern:black none;}
+    .xl77
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        text-align:right;
+        border:none;
+        background:#FCE4D6;
+        mso-pattern:black none;}
+    .xl78
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        text-align:right;
+        vertical-align:top;
+        border:none;
+        background:#FCE4D6;
+        mso-pattern:black none;
+        white-space:normal;}
+    .xl79
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        text-align:right;
+        vertical-align:top;
+        border:none;
+        background:#FCE4D6;
+        mso-pattern:black none;
+        white-space:normal;}
+    .xl80
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        text-align:right;
+        vertical-align:top;
+        border:none;
+        background:#E2EFDA;
+        mso-pattern:black none;
+        white-space:normal;}
+    .xl81
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        text-align:right;
+        border:none;
+        background:#E2EFDA;
+        mso-pattern:black none;}
+    .xl82
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        text-align:right;
+        vertical-align:top;
+        border:none;
+        background:#E2EFDA;
+        mso-pattern:black none;
+        white-space:normal;}
+    .xl83
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        text-align:right;
+        vertical-align:top;
+        border:none;
+        background:#FCE4D6;
+        mso-pattern:black none;}
+    .xl84
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        text-align:right;
+        vertical-align:top;
+        border:none;
+        background:#FCE4D6;
+        mso-pattern:black none;
+        white-space:normal;}
+    .xl85
+        {mso-style-parent:style0;
+        color:black;
+        font-size:11.0pt;
+        text-align:right;
+        vertical-align:top;
+        border:none;
+        background:#E2EFDA;
+        mso-pattern:black none;}
+    ruby
+        {ruby-align:left;}
+    rt
+        {color:windowtext;
+        font-size:9.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:等线;
+        mso-generic-font-family:auto;
+        mso-font-charset:134;
+        mso-char-type:none;
+        display:none;}
+    -->
+    </style>
+
+<!--[if lt IE 9]>
+<script src="assets/plugins/respond.js"></script>
+<script src="assets/plugins/html5shiv.js"></script>
+<script src="assets/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+
+    <!--=== End scripts ===-->
+
+</body>
+
+</html>
