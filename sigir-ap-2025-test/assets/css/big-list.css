@@ -1,0 +1,95 @@
+/*big-list
+------------------------------------*/
+.big-list {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+  }
+  
+  .big-list li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #555;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .big-list li {
+      padding: 14px 0 10px;
+    }
+  }
+  
+  .big-list li div {
+    padding: 0;
+    -webkit-transition: padding .3s;
+    transition: padding .3s;
+  }
+  
+  .big-list li div h4 {
+    font-size: 1.4em;
+    text-transform: none;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .big-list li div h4 {
+      font-size: 1.5em;
+    }
+  }
+  
+  .big-list li div p {
+    color: tomato;
+  }
+  
+  .big-list li div h4, .big-list li div p {
+    line-height: 70px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .big-list li div h4, .big-list li div p {
+      line-height: 20px;
+      padding: 5px 0;
+      text-align: left;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .big-list li:hover {
+      background: #f3f3f3;
+    }
+    .big-list li:hover p {
+      color: #222;
+    }
+    .big-list li:hover div {
+      padding: 0 30px;
+    }
+  }
+  
+  .big-list.narrow {
+    padding-top: 24px;
+  }
+  
+  .big-list.narrow li div h4 {
+    font-size: 1.3em;
+  }
+  
+  .big-list.narrow li div h4, .big-list.narrow li div p {
+    line-height: 54px;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .big-list.narrow li div h4, .big-list.narrow li div p {
+      line-height: 18px;
+    }
+  }
+  
+  .big-list.narrow li:hover div {
+    padding: 0 15px;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .big-list.narrow li:hover div {
+      padding: 0;
+    }
+  }
