@@ -128,8 +128,11 @@
         <!-- Image Gradient -->
         <script type="text/javascript">
     //Get Banner image by random
-    var n = Math.floor(Math.random() * 4 + 1);
-document.write('<div class="interactive-slider-v2" style="background-image:url(\'./assets/img/main-banners/main-banners_' + n + '.jpg\')">');
+var images = ['xian_1.jpeg', 'xian_2.jpeg', 'xian_4.jpeg', 'xian_8.jpg', 'xian_10.jpg'];
+var randomIndex = Math.floor(Math.random() * images.length);
+var selectedImage = images[randomIndex];
+
+document.write('<div class="interactive-slider-v2" style="background-image:url(\'./assets/img/main-banners/' + selectedImage + '\')">');
 </script>
 
         <div class="container">

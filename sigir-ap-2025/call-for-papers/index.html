@@ -161,8 +161,11 @@
         <!--=== End Header ===-->
         <script type="text/javascript">
     //Get Banner image by random
-    var n = Math.floor(Math.random() * 4 + 1);
-    document.write('<div class="interactive-slider-v2" style="background-image:url(\'../assets/img/main-banners/main-banners_' + n + '.jpg\')">');
+    var images = ['xian_1.jpeg', 'xian_2.jpeg', 'xian_4.jpeg', 'xian_8.jpg', 'xian_10.jpg', 'xidian_1.jpg', 'xidian_2.jpg', 'xidian_5.jpg'];
+var randomIndex = Math.floor(Math.random() * images.length);
+var selectedImage = images[randomIndex];
+
+document.write('<div class="interactive-slider-v2" style="background-image:url(\'../assets/img/main-banners/' + selectedImage + '\')">');
 </script>
 
         <div class="container">
@@ -176,8 +179,8 @@
                     <!-- Contents goes here -->
                     <div class="news-v3-in">
                         <p>
-                            The annual SIGIR-AP (Asia/Pacific) conference is a new regional conference on Information Retrieval. After the 1st SIGIR-AP conference in Beijing, China, the 2nd SIGIR-AP conference in Tokyo, Japan, the 3rd SIGIR-AP conference will be run as a hybrid conference from December 7th to 10th, 2025, in Xi'an, China. The authors of accepted papers can present their work in person or remotely at the conference. <br>
-                            The scope of SIGIR-AP is the same as that of SIGIR. We welcome high-quality papers with contributions related to information retrieval. There are two types of SIGIR-AP submissions: <strong>Regular submissions</strong> and <strong>SIGIR-Revise-and-Resubmit submissions</strong>.
+                            The annual SIGIR-AP (Asia/Pacific) conference is a new regional conference on Information Retrieval. The 3rd SIGIR-AP conference (SIGIR-AP 2025) will be a hybrid conference from December 7th to 10th, 2025, in Xi'an, China.  
+                            The authors of accepted papers can present their work in person or remotely at the conference. The scope of SIGIR-AP is the same as that of SIGIR. We welcome high-quality papers with contributions related to information retrieval. There are two types of SIGIR-AP submissions: <strong>Regular submissions</strong>  and  <strong>SIGIR-Revise-and-Resubmit submissions</strong>.
                         </p>
                         
                         <h1 class="margin-bottom-5" style="margin-bottom: 0">
@@ -187,8 +190,24 @@
                         <p>
                             <!--Compared to existing IR conferences, a novel feature of SIGIR-AP is that, although the review process is single-track (with a variable page limit – see below), SIGIR-AP has two paper types: <i>Regular</i> and <i>SIGIR-RR</i>:
                             -->
-                            Regular submissions are new, original contributions that have not been accepted elsewhere or simultaneously submitted to another journal or conference. We also welcome submissions of Resource and Reproducibility papers. Resource papers describe new resources available to the community, including test collections, software tools, and services for information retrieval and access tasks. Reproducibility papers repeat, reproduce, generalize, and re-examine prior work, with the focus on generating new findings of established approaches akin to a test of time. We encourage authors to make as many of the resources associated with a paper publicly available.
+                            Regular submissions are new, original contributions that have not been accepted elsewhere or simultaneously submitted to another journal or conference. We welcome the following types of submissions:
                         </p>
+                        <li>
+                            <strong>Original research</strong> papers that make new theoretical and / or empirical contributions to the field of IR that grow our scientific understanding of models, systems, metrics, and user interactions in IR to aid the development of more effective information access methods;
+                        </li>
+                        <li>
+                            <strong>Resource</strong> papers that describe new resources available to the community, including test collections, software tools, and services for information retrieval and access tasks;
+                        </li>
+                        <li>
+                            <strong>Reproducibility</strong> papers that repeat, reproduce, generalize, and re-examine prior work, with the focus on generating new findings of established approaches akin to a test of time;
+                        </li>
+                        <li>
+                            <strong>Industry</strong> papers that describe IR systems in practice, open problems and challenges in industry, and challenges and best practices for taking research to production;
+                        </li>
+                        <li>
+                            <strong>Perspective</strong> papers that describe original ideas and research visions for new or open problems in IR, or provide novel and critical perspectives on existing IR research.
+                        </li>
+                        We encourage authors to make as many of the resources associated with a paper publicly available.
                             <!-- <li>
                                 <strong>Format</strong>: Paper body + references
                             </li>
@@ -206,19 +225,19 @@
                         </p>
 
                         <h1 class="margin-bottom-5" style="margin-bottom: 0">
-                            <strong>SIGIR-Revise-and-Resubmit (SIGIR-RR) Submissions                            </strong>
+                            <strong>SIGIR-Revise-and-Resubmit (SIGIR-RR) Submissions</strong>
                         </h1>
                         <br>
                         <p>
                             <!--Compared to existing IR conferences, a novel feature of SIGIR-AP is that, although the review process is single-track (with a variable page limit – see below), SIGIR-AP has two paper types: <i>Regular</i> and <i>SIGIR-RR</i>:
                             -->
-                            SIGIR-RR submissions are for revised manuscripts of either full or short papers that were submitted to but not accepted by the SIGIR 2025 conference (this option is not available for other SIGIR paper tracks, e.g., perspectives, resources, or reproducibility). Authors can use this option to address the issues raised in the SIGIR 2025 reviews and revise the paper accordingly. In addition to the revised paper, the authors must attach the following information to the submitted PDF file:
+                            SIGIR-RR submissions are for revised manuscripts of either full, short, resource, reproducibility, and perspective papers that were submitted to but not accepted by the SIGIR 2025 conference. Authors can use this option to address the issues raised in the SIGIR 2025 reviews and revise the paper accordingly. In addition to the revised paper, the authors must attach the following information to the submitted PDF file:
                         </p>
                             <li>
                                 Explanation (1-3 pages with no style requirements): a text includes the SIGIR paper ID and responses to the SIGIR reviews, explaining how the issues raised by the SIGIR reviewers have been addressed in the revised paper.  
                             </li>
                             <li>
-                                SIGIR submission: the original anonymized submission file to SIGIR 2025. 
+                                SIGIR submission: the original anonymized submission file to SIGIR 2025.
                             </li>
                                 
                                      
@@ -231,176 +250,200 @@
                         <p>
                             Time zone: <a href="https://www.timeanddate.com/time/zones/aoe">Anywhere On Earth (AOE)</a>
                             <br>
-                            Abstracts due: <span class="text-danger">July 1, 2025</span><br>
-                            Paper  due: <span class="text-danger">July 8, 2025</span><br>
-                            Notification: <span class="text-danger">September 12, 2025</span><br>
-                            Camera-ready due: <span class="text-danger">September 26, 2025</span><br>
+                            Abstracts due: <span class="text-danger">July 1st, 2025</span><br>
+                            Paper  due: <span class="text-danger">July 8th, 2025</span><br>
+                            Notification: <span class="text-danger">September 12th, 2025</span><br>
+                            Camera-ready due: <span class="text-danger">September 26th, 2025</span><br>
                         </p>
 
                         <hr>
                         <h2 class="margin-bottom-5" style="margin-bottom: 0"><strong>Submission Guidelines</strong></h2>
-                        <p class="margin-top-0">
+                        <!-- <p class="margin-top-0">
                             All submissions of papers must be original and have not been published or accepted elsewhere or simultaneously submitted to another journal or conference. 
-                        </p>
+                        </p> -->
                         <p>
-                            Submissions of regular and SIGIR-RR papers must be in English, in PDF format, in the current ACM two-column conference format. Suitable LaTeX, Word, and <a href="https://www.overleaf.com/gallery/tagged/acm-official">Overleaf</a> templates are available from the <a href="https://www.acm.org/publications/proceedings-template">ACM Website</a> (use the "sigconf" proceedings template for LaTeX and the Interim Template for Word).<br>  
+                            <li>
+                                All submissions of papers must be original and have not been published or accepted elsewhere or simultaneously submitted to another journal or conference.
+                            </li>
+                            <li>
+                                Submissions of regular and SIGIR-RR papers must be in English, in PDF format, in the current ACM two-column conference format. Suitable LaTeX, Word, and <a href="https://www.overleaf.com/gallery/tagged/acm-official">Overleaf</a> templates are available from the <a href="https://www.acm.org/publications/proceedings-template">ACM Website</a> (use the "sigconf" proceedings template for LaTeX and the Interim Template for Word).
+                            </li>
                             
-                            We adopt a double-anonymized, single-track reviewing procedure, which allows submissions of papers commensurate with their contribution sizes (i.e., we don't have two tracks for full and short papers, respectively).<br>  
- 
-                            Submissions of papers must be at least 2 pages and at most 9 pages (including figures, tables, proofs, appendixes, acknowledgments, and any content except references) in length, with unlimited pages for references. While we do not set separate submission tracks for full and short papers, the assessment of each submission will be based on whether the paper length is commensurate with its contribution. For example, a 2-page paper would be accepted if its scientific contribution is worth 2 pages. However, a 9-page paper would be considered weak if it only contains the substance of a 4-page paper.<br> 
+                            <li>
+                                We adopt a double-anonymized, single-track reviewing procedure, which allows submissions of papers commensurate with their contribution sizes (i.e., we don't have two tracks for full and short papers, respectively).
+                            </li>
+                            <li>
+                                Submissions of papers must be at least 2 pages and at most 9 pages (including figures, tables, proofs, appendixes, acknowledgments, and any content except references) in length, with unlimited pages for references. While we do not set separate submission tracks for full and short papers, the assessment of each submission will be based on whether the paper length is commensurate with its contribution. For example, a 2-page paper would be accepted if its scientific contribution is worth 2 pages. However, a 9-page paper would be considered weak if it only contains the substance of a 4-page paper. 
+                            </li>
+                            
+                            <li>
+                                Submissions must be
+                                anonymous and should be submitted electronically via EasyChair:
+                                <a class="tooltips" href="https://easychair.org/my/conference?conf=sigirap2025">https://easychair.org/my/conference?conf=sigirap2025</a>.
+                            </li>
 
-                            Submissions must be
-                            anonymous and should be submitted electronically via EasyChair:
-                            <a class="tooltips" href="https://easychair.org/my/conference?conf=sigirap2025">https://easychair.org/my/conference?conf=sigirap2025</a>.
                         </p>
 
                         <hr>
-                        <h2 class="margin-bottom-5"><strong>Anonymity and Pre-Print/ArXiv Policy:</strong></h2>
+                        <h2 class="margin-bottom-5"><strong>Submission Policies</strong></h2>
                         <p>
-                            The review process is double-anonymized. Authors must take all reasonable steps to preserve the anonymity of their submissions. The submissions must not include any author information. The citations and discussions of authors' prior work should be anonymized or written in the third person form. It is acceptable to explicitly refer to companies or organizations that provided datasets, hosted experiments, or deployed solutions if it does not necessarily imply the authors are affiliated with these mentioned organizations. The authors can submit to SIGIR-AP 2025 papers that have been posted to pre-print/archival platforms (e.g. arXiv), or will be posted in the future, after submission. SIGIR-AP follows the <a href="https://sigir-2025.github.io/policy_arxiv.html">2025 Pre-Print/ArXiv Policy</a>, and breaking anonymity or pre-print/ArXiv policy puts the submission at risk of being desk rejected.<br><br> 
+                            <strong>Anonymity and Pre-Print/ArXiv Policy</strong>:
+                            The review process is double-anonymized. Authors must take all reasonable steps to preserve the anonymity of their submissions. The submissions must not include any author information. The citations and discussions of authors' prior work should be anonymized or written in the third person form. It is acceptable to explicitly refer to companies or organizations that provided datasets, hosted experiments, or deployed solutions if it does not necessarily imply the authors are affiliated with these mentioned organizations. The authors can submit to SIGIR-AP 2025 papers that have been posted to pre-print/archival platforms (e.g. arXiv), or will be posted in the future, after submission. SIGIR-AP follows the <a href="https://sigir2025.dei.unipd.it/arxiv-policy.html">2025 Pre-Print/ArXiv Policy</a>, and breaking anonymity or pre-print/ArXiv policy puts the submission at risk of being desk rejected.<br>
                             
+                            <strong>Anonymity of Resource Papers</strong>:
+                            We recognize that anonymization of online resources is not always possible, and therefore, we ask authors to take reasonable (not onerous) actions to make the online resources anonymous. Anonymization is not needed for existing resources that are already used by the community. Authors' names should always be removed from the paper.<br>
+
+                            <strong>Anonymity of Industry Papers</strong>:
+                            We recognize that full anonymization of industry papers is not always possible, especially if the paper is about systems / platforms / resources that make it easy to identify the institution. Therefore, we ask authors to take reasonable (not onerous) actions to make the papers anonymized. It is acceptable to explicitly refer to companies or organizations that provided datasets, hosted experiments, or deployed solutions. Authors' names should always be removed from the paper.<br>
+
+                            <strong>Desk Rejection Policy</strong>:
+                            Submissions that violate the anonymity policy and pre-print policy, do not adhere to formatting or length requirements, lack topical fit for SIGIR, or are determined to violate ACM’s policies on academic dishonesty, including plagiarism, author misrepresentation, falsification, etc., are subject to desk rejection by the chairs.<br>
+
                             <strong>Authorship Policy</strong>:
                             Authors should carefully read <a href="https://www.acm.org/publications/policies/new-acm-policy-on-authorship">ACM's authorship policy</a> before submitting a paper. To identify reviewers with conflicts of interest, the full author list must be specified at abstract submission time. Changes to the author list after the abstract submission are not allowed. At least one author of each accepted paper should register for the conference and present the work, either in person or remotely, at the conference.<br> 
  
-                            <strong>Desk Rejection Policy</strong>:
-                            Submissions that violate the anonymity policy and pre-print policy, do not adhere to formatting or length requirements, lack topical fit for SIGIR, or are determined to violate ACM’s policies on academic dishonesty, including plagiarism, author misrepresentation, falsification, etc., are subject to desk rejection by the chairs.<br>
+                            <strong>ACM Publication Policy</strong>:
+                            By submitting your article to an ACM Publication, you are hereby acknowledging that you and your co-authors are subject to all <a href="https://www.acm.org/publications/policies">ACM Publications Policies</a>, including ACM's new Publications Policy on <a href="https://www.acm.org/publications/policies/research-involving-human-participants-and-subjects">Involving Human Participants and Subjects</a>. Alleged violations of this policy or any ACM Publications Policy will be investigated by ACM and may result in a full retraction of your paper, in addition to other potential penalties, as per ACM Publications Policy. Please ensure that you and your co-authors obtain an <a href="https://orcid.org/register">ORCID ID</a>, so you can complete the publishing process for your accepted paper. ACM has been involved in ORCID from the start, and we have recently made a commitment to <a href="https://authors.acm.org/author-resources/orcid-faqs">collect ORCID IDs from all of our published authors</a>. We are committed to improving author discoverability, ensuring proper attribution, and contributing to ongoing community efforts around name normalization; your ORCID ID will help in these efforts.
+                            <!-- <strong>Desk Rejection Policy</strong>:
+                            Submissions that violate the anonymity policy and pre-print policy, do not adhere to formatting or length requirements, lack topical fit for SIGIR, or are determined to violate ACM’s policies on academic dishonesty, including plagiarism, author misrepresentation, falsification, etc., are subject to desk rejection by the chairs.<br> -->
 
                         </p>
                         <hr>
                         <h2 class="margin-bottom-5" style="margin-bottom: 0"><strong>TOPICS OF INTEREST</strong></h2>
                         <p class="margin-top-0">The topics of SIGIR-AP are the same as those of SIGIR. Relevant areas include but are not limited to:</p>
-                        Coming soon.
-                        <!-- <h3>
+                        <h3>
                             <strong>Search and Ranking:</strong>
                         </h3>
                         Research on core IR concepts, principles, and algorithms:
-
-                            <ul>
-                                <li>
-                                    Queries and query analysis
-                                </li>
-                                <li>
-                                    Web search
-                                </li>
-                                <li>
-                                    Retrieval model
-                                </li>
-                                <li>Ranking model</li>
-                                <li>Theoretical models and foundations of information retrieval and access</li>
-                            </ul>
-
-                            <h3><strong>System, Efficiency, and Scalability:</strong></h3>
-                            Research on system aspects related to the efficiency and scalability of IR systems:
-
-                            <ul>
-                                <li>Efficient and scalable indexing</li>
-                                <li>Energy efficiency and green computing for IR</li>
-                                <li>Search engine architecture</li>
-                                <li>Distributed search, edge IR</li>
-                            </ul>
-
-                            <h3><strong>Recommender Systems:</strong></h3>
-                            Research on recommender systems:
-
-                            <ul>
-                                <li>Filtering and recommendation</li>
-                                <li>Cross-domain recommendation</li>
-                                <li>Novel approaches to recommendation</li>
-                                <li>Interactive and conversational recommendation</li>
-                                <li>Evaluation of recommender systems</li>
-                                <li>Other theoretical models and foundations of recommender systems</li>
-                            </ul>
-
-                            <h3><strong>Machine Learning and NLP for IR:</strong></h3>
-                            Research that bridges ML, NLP, and IR:
-
-                            <ul>
-                                <li>Core ML applied to IR</li>
-                                <li>Large Language Models for IR</li>
-                                <li>Retrieval Augmented Machine Learning</li>
-                                <li>Question answering</li>
-                            </ul>
-
-                            <h3><strong>Conversational IR:</strong></h3>
-                            Research on developing intelligent IR systems that support interactive conversations with users:
-
-                            <ul>
-                                <li>End-to-end conversational IR models and optimization</li>
-                                <li>Modularized IR techniques (e.g., query understanding, user modeling, intent prediction, context and discourse management, reranking, and results presentation)</li>
-                                <li>Session based search or recommendation, user engagement</li>
-                                <li>Conversational question answering</li>
-                                <li>Spoken language interfaces</li>
-                                <li>Intelligent personal assistants and agents</li>
-                            </ul>
-
-                            <h3><strong>Humans and Interfaces:</strong></h3>
-                            Research on user-centric aspects of IR, including user interfaces, behavior modeling, privacy, and interactive systems, such as:
-
-                            <ul>
-                                <li>Mining and modeling users</li>
-                                <li>User simulation</li>
-                                <li>Interactive search</li>
-                                <li>Social search</li>
-                                <li>Collaborative search</li>
-                                <li>Information security</li>
-                                <li>User studies</li>
-                                <li>Other theoretical models and foundations of user-centric IR</li>
-                            </ul>
-
-                            <h3><strong>Evaluation:</strong></h3>
-                            Research on the measurement and evaluation of IR systems, such as:
-
-                            <ul>
-                                <li>User-centered evaluation</li>
-                                <li>System-centered evaluation</li>
-                                <li>Beyond Cranfield</li>
-                                <li>Beyond labels</li>
-                                <li>Beyond effectiveness</li>
-                                <li>Novel methodology for evaluation</li>
-                            </ul>
-
-                            <h3><strong>Fairness, Accountability, Transparency, Ethics, and Explainability (FATE) in IR:</strong></h3>
-                            Research on FATE aspects and biases in IR:
-
-                            <ul>
-                                <li>Fairness, accountability, transparency</li>
-                                <li>Ethics, economics, and politics</li>
-                                <li>Two-sided search and recommendation scenarios</li>
-                                <li>Personal safety</li>
-                            </ul>
-
-                            <h3><strong>Multimodal IR:</strong></h3>
-                            Research that bridges the domain of multimedia and IR, such as:
-
-                            <ul>
-                                <li>Multimedia search</li>
-                                <li>Multimedia recommendation</li>
-                                <li>Multimodal for IR</li>
-                            </ul>
-
-                            <h3><strong>Domain-specific Applications:</strong></h3>
-                            Research on domain-specific IR problems and challenges, such as:
-
-                            <ul>
-                                <li>Local and mobile search</li>
-                                <li>Social search</li>
-                                <li>Search in structured data</li>
-                                <li>Education</li>
-                                <li>Legal</li>
-                                <li>Health</li>
-                                <li>Other applications and domains</li>
-                            </ul>
-
-                            <h3><strong>Other IR Topics:</strong></h3>
-                            Research on any IR-related research that does not belong to any of the areas above, such as:
-
-                            <ul>
-                                <li>Explicit semantics</li>
-                                <li>Knowledge acquisition</li>
-                                <li>Knowledge representation and reasoning</li>
-                                <li>Document representation and content analysis</li>
-                            </ul>
-                            </ul> -->
+                        
+                        <ul>
+                            <li>Queries and query analysis</li>
+                            <li>Web search</li>
+                            <li>Retrieval and ranking models</li>
+                            <li>Theoretical models and foundations of information retrieval and access</li>
+                        </ul>
+                        <h3><strong>System, Efficiency, Scalability, and Sustainability:</strong></h3>
+                        Research on system aspects related to the efficiency and scalability of IR systems:
+                        
+                        <ul>
+                        <li>Efficient and scalable crawling, indexing, ranking, and more</li>
+                            <li>Energy efficiency and green computing for IR</li>
+                            <li>Scalable and sustainable platform architecture, distributed search, metasearch, peer-to-peer search, search in the cloud, edge IR</li>
+                        </ul>
+                        
+                        <h3><strong>Recommender Systems:</strong></h3>
+                        Research on recommender systems:
+                        
+                        <ul>
+                            <li>Filtering and recommendation</li>
+                            <li>Cross-domain recommendation, socially- and context-aware recommender systems, multi-stakeholder recommendations</li>
+                            <li>Interactive and conversational recommendation</li>
+                            <li>Evaluation of recommender systems</li>
+                            <li>Other theoretical models and foundations of recommender systems</li>
+                        </ul>
+                        
+                        <h3><strong>Machine Learning and NLP for IR:</strong></h3>
+                        Research that bridges ML, NLP, and IR:
+                        
+                        <ul>
+                            <li>ML applied to IR</li>
+                            <li>Generative IR, including large language models for IR</li>
+                            <li>Retrieval enhanced machine learning (REML) and Retrieval augmented generation (RAG)</li>
+                            <li>Question answering</li>
+                        </ul>
+                        
+                        <h3><strong>Conversational IR:</strong></h3>
+                        Research on developing intelligent IR systems that support interactive conversations with users:
+                        
+                        <ul>
+                            <li>End-to-end conversational IR models and optimization</li>
+                            <li>Modularized IR techniques (e.g., query understanding, user modeling, intent prediction, context and discourse management, reranking, and results presentation)</li>
+                            <li>Session-based search or recommendation, user engagement</li>
+                            <li>Conversational question answering</li>
+                            <li>Intelligent personal assistants and agents</li>
+                        </ul>
+                        
+                        <h3><strong>Humans and Interfaces:</strong></h3>
+                        Research on user-centric aspects of IR, including user interfaces, behavior modeling, privacy, and interactive systems, such as:
+                        
+                        <ul>
+                            <li>Mining user activity logs and modeling users</li>
+                            <li>User simulation</li>
+                            <li>Interactive search</li>
+                            <li>Social search</li>
+                            <li>Collaborative search</li>
+                            <li>Information security</li>
+                            <li>User studies</li>
+                            <li>Other theoretical models and foundations of user-centric IR</li>
+                        </ul>
+                        
+                        <h3><strong>Evaluation:</strong></h3>
+                        Research on the measurement and evaluation of IR systems, such as:
+                        
+                        <ul>
+                            <li>User-centered evaluation</li>
+                            <li>System-centered evaluation</li>
+                            <li>Beyond Cranfield (e.g., online evaluation, task-based, session-based, multi-turn, interactive search)</li>
+                            <li>Beyond labels (e.g., simulation, implicit signals, eye-tracking and physiological signals)</li>
+                            <li>Beyond effectiveness(e.g., value, utility, usefulness, diversity, novelty, urgency, freshness, credibility, authority)</li>
+                            <li>Synthetic benchmark, datasets, and label generation (e.g., LLM-as-judge and synthetic queries and corpus generation)</li>
+                            <li>Novel methodology for evaluation</li>
+                        </ul>
+                        
+                        <h3><strong>IR and Society:</strong></h3>
+                        Research on societal implications of IR systems and research, and centering IR research on societal needs:
+                        
+                        <ul>
+                            <li>Fairness, accountability, and transparency</li>
+                            <li>Values, sociotechnical imaginaries, and ethics</li>
+                            <li>Economics, politics, and social justice</li>
+                        </ul>
+                        
+                        <h3><strong>Multimodal IR:</strong></h3>
+                        Research that bridges the domain of multimedia and IR, such as:
+                        
+                        <ul>
+                            <li>Multimedia search</li>
+                            <li>Multimedia recommendation</li>
+                        </ul>
+                        
+                        <h3><strong>Domain-specific Applications:</strong></h3>
+                        Research on domain-specific IR problems and challenges, such as:
+                        
+                        <ul>
+                            <li>Local and mobile search</li>
+                            <li>Social search</li>
+                            <li>Search in structured data</li>
+                            <li>Education</li>
+                            <li>Legal</li>
+                            <li>Health</li>
+                            <li>Other applications</li>
+                        </ul>
+                        
+                        <h3><strong>IR in Industry:</strong></h3>
+                        Open problems and challenges in industry, from industry research to production.
+                        
+                        <ul>
+                            <li>Innovative approaches used in deployed systems and products, and domain-specific challenges are welcome.</li>
+                            <li>Position papers on the current and future state of IR in practice, and the role IR could play in shaping the next generation of information systems.</li>
+                            <li>Role of search, Generative AI & IR in the creator economy (e.g. short video platforms, audio platforms) & marketplaces (e.g. delivery services, hospitality industry, crowdfunding platforms, retail platforms, rentals).</li>
+                            <li>System design case studies from industry practitioners, identifying best practices and design principles for learning systems.</li>
+                            <li>Evaluation in production. Metrics and measurement techniques are used at scale to understand the performance of industrial systems. Success in achieving offline/online evaluation consistency.</li>
+                            <li>Complex user interaction modeling in real-world situations.</li>
+                            <li>Trust and safety: Combating misinformation spread; Building privacy-preserving retrieval systems; Algorithmic responsibility & fairness.</li>
+                            <li>Large-scale systems and models in practice (e.g., foundation models and agentic systems)</li>
+                        </ul>
+                        
+                        <h3><strong>Other IR Topics:</strong></h3>
+                        Research on any IR-related research that does not belong to any of the areas above, such as:
+                        
+                        <ul>
+                            <li>Explicit semantics</li>
+                            <li>Knowledge acquisition</li>
+                            <li>Knowledge representation and reasoning</li>
+                            <li>Document representation and content analysis</li>
+                        </ul>
+                        <strong>Author take note:</strong> The official publication date is the date the proceedings are made available in the ACM Digital Library. This date may be up to two weeks prior to the first day of your conference. The official publication date affects the deadline for any patent filings related to published work. (For those rare conferences whose proceedings are published in the ACM Digital Library after the conference is over, the official publication date remains the first day of the conference.)
                         
 
 

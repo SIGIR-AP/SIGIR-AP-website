@@ -160,8 +160,11 @@
         <!--=== End Header ===-->
         <script type="text/javascript">
     //Get Banner image by random
-    var n = Math.floor(Math.random() * 5 + 1);
-    document.write('<div class="interactive-slider-v2" style="background-image:url(\'../assets/img/main-banners/main-banners_' + n + '.jpg\')">');
+    var images = ['xian_1.jpeg', 'xian_2.jpeg', 'xian_4.jpeg', 'xian_8.jpg', 'xian_10.jpg', 'xidian_1.jpg', 'xidian_2.jpg', 'xidian_5.jpg'];
+var randomIndex = Math.floor(Math.random() * images.length);
+var selectedImage = images[randomIndex];
+
+document.write('<div class="interactive-slider-v2" style="background-image:url(\'../assets/img/main-banners/' + selectedImage + '\')">');
 </script>
 
         <div class="container">
@@ -205,7 +208,7 @@
 </div>
                         <div class="portrait">
     <figure class="portrait_image">
-      <a href=""><img src="../assets/img/organizers/Keping Bi.jpg" alt="image"></a>
+      <a href=""><img src="../assets/img/organizers/keping_new.jpeg" alt="image"></a>
     </figure>
     <span class="portrait_name">
       Keping Bi
@@ -256,34 +259,60 @@
 </div>
                         </div>
                         
-                        <!-- <h1 style="text-align: center; margin-top: 50px;">
-                            <strong>Tutorial / Workshop Chairs</strong>
+                        <h1 style="text-align: center; margin-top: 50px;">
+                            <strong>Workshop Chairs</strong>
                         </h1>
                         <div class="container" style="display: flex;flex-direction: row;justify-content: center;">
                             <div class="portrait">
     <figure class="portrait_image">
-      <a href=""><img src="../assets/img/organizers/Masaharu Yoshioka.jpeg" alt="image"></a>
+      <a href=""><img src="../assets/img/organizers/Makoto Kato.jpg" alt="image"></a>
     </figure>
     <span class="portrait_name">
-      Masaharu Yoshioka
+      Makoto Kato
     </span>
     <span class="portrait_affiliation">
-      Hokkaido University, Japan
-    </span>
-</div>
-                            <div class="portrait">
-    <figure class="portrait_image">
-      <a href=""><img src="../assets/img/organizers/Kazunari Sugiyama.jpg" alt="image"></a>
-    </figure>
-    <span class="portrait_name">
-      Kazunari Sugiyama
-    </span>
-    <span class="portrait_affiliation">
-      Osaka Seikei University, Japan
+      University of Tsukuba, Japan
     </span>
 </div>
 
-                            </div> -->
+                        </div>
+                        <h1 style="text-align: center; margin-top: 50px;">
+                          <strong>Tutorial Chairs</strong>
+                        </h1>
+                        <div class="container" style="display: flex;flex-direction: row;justify-content: center;">
+                          <div class="portrait">
+<figure class="portrait_image">
+<a href=""><img src="../assets/img/organizers/Krisztian Balog.jpeg" alt="image"></a>
+</figure>
+<span class="portrait_name">
+  Krisztian Balog
+</span>
+<span class="portrait_affiliation">
+  University of Stavanger, Norway
+</span>
+</div>
+                  
+
+                            </div>
+
+                            <h1 style="text-align: center; margin-top: 50px;">
+                              <strong>Best Paper Chairs</strong>
+                          </h1>
+                          <div class="container" style="display: flex;flex-direction: row;justify-content: center;">
+                              <div class="portrait">
+      <figure class="portrait_image">
+        <a href=""><img src="../assets/img/organizers/charles-clarke.jpg" alt="image"></a>
+      </figure>
+      <span class="portrait_name">
+        Charles Clarke
+      </span>
+      <span class="portrait_affiliation">
+        University of Waterloo, Canada
+      </span>
+  </div>
+                    
+  
+                              </div>
 
                         <!-- <h1 style="text-align: center; margin-top: 50px;">
                             <strong>Finance Chair</strong>

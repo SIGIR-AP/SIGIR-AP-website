@@ -161,8 +161,11 @@
         <!--=== End Header ===-->
         <script type="text/javascript">
     //Get Banner image by random
-    var n = Math.floor(Math.random() * 4 + 1);
-    document.write('<div class="interactive-slider-v2" style="background-image:url(\'../assets/img/main-banners/main-banners_' + n + '.jpg\')">');
+    var images = ['xian_1.jpeg', 'xian_2.jpeg', 'xian_4.jpeg', 'xian_8.jpg', 'xian_10.jpg', 'xidian_1.jpg', 'xidian_2.jpg', 'xidian_5.jpg'];
+var randomIndex = Math.floor(Math.random() * images.length);
+var selectedImage = images[randomIndex];
+
+document.write('<div class="interactive-slider-v2" style="background-image:url(\'../assets/img/main-banners/' + selectedImage + '\')">');
 </script>
 
         <div class="container">
@@ -182,8 +185,8 @@
                         <p>
                             Time zone: <a href="https://www.timeanddate.com/time/zones/aoe">Anywhere On Earth (AOE)</a>
                             <br>
-                            Tutorial Proposals: <span class="text-danger">September 15, 2025</span><br>
-                            Tutorial Notifications: <span class="text-danger">September 29, 2025</span><br>
+                            Tutorial Proposals: <span class="text-danger">September 15th, 2025</span><br>
+                            Tutorial Notifications: <span class="text-danger">September 29th, 2025</span><br>
                             <!-- <span class="text-danger">Monday September 2: </span>Tutorial overview summary due<br> -->
                             <!-- <span class="text-danger">Monday October 7: </span>Tutorial day<br> -->
                         </p>
@@ -227,7 +230,7 @@
                         <h3><strong>Tutorial Chairs</strong></h3>
                         <ul>
                             <li>
-                                Coming soon.
+                                Krisztian Balog, University of Stavanger, Norway
                             </li>
                         </ul>
 
