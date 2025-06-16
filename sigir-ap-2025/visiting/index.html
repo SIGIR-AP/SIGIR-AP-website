@@ -230,7 +230,7 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
                       // 加载视频源（如果未加载）
                       if (!video.querySelector('source')) {
                         const source = document.createElement('source');
-                        source.src = video.getAttribute('data-src') || '../assets/img/visiting/ai-xian.mp4';
+                        source.src = video.getAttribute('data-src') || '../assets/img/visiting/ai-xian-small.mp4';
                         source.type = 'video/mp4';
                         video.appendChild(source);
                         video.load();
