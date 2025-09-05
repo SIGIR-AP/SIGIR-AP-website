@@ -188,7 +188,7 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
 </script>
 
         <div class="container">
-            <h1 class="animated fadeInUp">Venue</h1>
+            <h1 class="animated fadeInUp">Hotel Reservation</h1>
         </div>
     </div>    
       
@@ -197,33 +197,203 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
             <div class="news-v3 margin-bottom-30">
                 <!-- Contents goes here -->
                 <div class="news-v3-in">
-                <h2><strong>Conference Venue</strong></h2>
-                <p> Address: No. 208 Ci'en East Road, Qujiang New District, Xi'an City, Shaanxi Province. <br>
+                <h2><strong>Hotel Reservation</strong></h2>
+                <p><strong>Address:</strong> No. 208 Ci'en East Road, Qujiang New District, Xi'an City, Shaanxi Province. <br>
+                    <strong>Phone:</strong> +86-29-68219999.
                 <h3><strong>Wyndham Grand Xi'an South</strong></h3>
-                Wyndham Grand Xi'an South is situated in the heart of Datang Everbright City in Xi'an's Qujiang New District—specifically at the northeast corner of Kaiyuan Plaza on Modern Tang Street. It is just steps away from the Giant Wild Goose Pagoda, as well as numerous scenic spots, shopping malls, and pedestrian streets.
-                The hotel is adjacent to the Tang City Wall Ruins Park, with famous attractions like the Giant Wild Goose Pagoda, Datang Furong Garden, and Qujiang Pool all within a 10-minute walk. Conveniently located near Metro Line 4, it offers easy access to transportation. The surrounding area boasts renowned local eateries such as Yuanjia Village, TongshengXi'ang, and Defachang, offering authentic Shaanxi flavors.</p>
-                <p> To the east of the hotel, a bustling commercial pedestrian street features an array of shops, including: Intime Mall, Hema Fresh, Yiyang Department Store, The Mixc Shopping Mall, CR Vanguard Supermarket.
-                The area is also packed with specialty stores offering bubble tea, desserts, snacks, and souvenirs, as well as cultural and entertainment venues like Pacific Cinema, Qujiang Art Museum, and Qujiang Concert Hall.
-                </p>
-                <p>
-                Whether for shopping, dining, or leisure, the Wyndham Grand Xi'an provides everything needed for a fulfilling travel experience.
-                Several distinctive restaurants and bars, along with a professional team of chefs, carefully select fresh ingredients to present a charming Continental-style buffet and a variety of classic Cantonese dishes. In the elegantly decorated dining environment, savor exquisite delicacies and indulge in unforgettable moments of pure delight. The hotel boasts one pillar-free luxurious banquet hall and 11 modern multifunctional meeting rooms, offering over 5,000 square meters of event space, all equipped with state-of-the-art audiovisual facilities to ensure a prestigious and flawless event experience. A variety of recreational amenities, such as a gym, sauna room, billiards room, chess and card room, and indoor heated swimming pool, provide leisurely enjoyment.
+                The Wyndham Grand Xi'an South is perfectly positioned in the heart of the Tang Dynasty Ever-bright City, Qujiang New District. The hotel is adjacent to the Tang Dynasty City Wall Ruins Park and is just a 10-minute walk from prominent attractions such as the Big Wild Goose Pagoda, Tang Paradise, and Qujiang Pool. Additionally, it is conveniently close to Metro Line 4, providing easy access to transportation.
+                <h4><strong>Accommodation Options</strong></h4>
+            <style>
+                body {
+                background-color: #f0f0f0; /* 页面整体灰色背景 */
+                font-family: Arial, sans-serif;
+                }
+                table {
+                width: 60%;
+                margin: 50px auto;
+                border-collapse: collapse;
+                background-color: #ffffff; /* 表格白色背景 */
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                border-radius: 8px;
+                overflow: hidden;
+                }
+                th {
+                background-color: #555; 
+                color: white;
+                padding: 15px;
+                text-align: left;
+                font-size: 16px;
+                }
+                td {
+                padding: 15px;
+                border-bottom: 1px solid #ddd;
+                font-size: 15px;
+                color: #333;
+                }
+                tr:last-child td {
+                border-bottom: none; /* 最后一行去掉下边框 */
+                }
+                tr:hover {
+                background-color: #f9f9f9; /* hover 效果 */
+                }
+            </style>
+            <table>
+                <tr>
+                <th>Room Type</th>
+                <th>Price (including breakfast)</th>
+                </tr>
+                <tr>
+                <td>Queen Room</td>
+                <td><strong>USD 90</strong> per night / <strong>RMB 600</strong> per night</td>
+                </tr>
+                <tr>
+                <td>Twin Room</td>
+                <td><strong>USD 90</strong> per night / <strong>RMB 600</strong> per night</td>
+                </tr>
+            </table>
+
+            <h4><strong>Booking Information</strong></h4>
+            <style>
+                body {
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+                }
+                .image-container {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                margin-top: 30px;
+                }
+                figure {
+                background: #fff;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                width: 45%;
+                text-align: center;
+                }
+                figure img {
+                width: 100%;
+                height: 300px;       /* 固定统一高度 */
+                object-fit: cover;   /* 保持比例裁剪，多余部分裁掉 */
+                border-radius: 8px;
+                }
+                figcaption {
+                margin-top: 8px;
+                font-size: 15px;
+                color: #555;
+                }
+            </style>
+
+                <div class="image-container">
+                <figure>
+                <img src="../assets/img/hotel_reservation/qween.JPEG" alt="Queen Room">
+                <figcaption>Queen Room</figcaption>
+                </figure>
+
+                <figure>
+                <img src="../assets/img/hotel_reservation/twin.JPEG" alt="Twin Room">
+                <figcaption>Twin Room</figcaption>
+                </figure>
+            </div>
+
+
+                <style>
+                body {
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+                }
+                table {
+                width: 70%;
+                margin: 40px auto;
+                border-collapse: collapse;
+                background: #fff;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                border-radius: 10px;
+                overflow: hidden;
+                text-align: center;
+                }
+                th {
+                background-color: #555;
+                color: #fff;
+                padding: 15px;
+                font-size: 16px;
+                text-align: center;
+                }
+                td {
+                padding: 20px;
+                border: 1px solid #ddd;
+                }
+                img.qr {
+                width: 180px;
+                height: 180px;
+                object-fit: contain;
+                }
+                .special-link {
+                display: block;
+                margin-top: 12px;
+                text-decoration: none;
+                font-size: 16px;
+                color: #007bff;
+                }
+                a:hover {
+                text-decoration: underline;
+                }
+            </style>
+
+            <table>
+                <tr>
+                <th>Chinese Participants</th>
+                <th>Foreign Participants</th>
+                </tr>
+                <tr>
+                <td>
+                    <img class="qr" src="../assets/img/hotel_reservation/booking_chinese.JPEG" alt="Chinese Participants QR Code">
+                    <a href="https://conf.kailimice.cn/f/fXt0Xa" target="_blank", class="special-link">Reservation Link</a>
+                </td>
+                <td>
+                    <img class="qr" src="../assets/img/hotel_reservation/booking_chinese.JPEG" alt="Foreign Participants QR Code">
+                    <a href="https://conf.kailimice.cn/f/w9kzHv" target="_blank", class="special-link">Reservation Link</a>
+                </td>
+                </tr>
+            </table>
+
+                <h4><strong>Booking Notice</strong></h4>
+                <ul>
+                <li><strong>Booking Deadline:</strong> Attendees must complete their reservations by December 1, 2025.</li>
+                <li><strong>For International Attendees:</strong> Full payment for accommodation must be made online at the time of booking. Unpaid reservations will be automatically canceled.</li>
+                <li><strong>For Chinese Attendees:</strong> A charge for two nights' accommodation is required as a "room reservation fee" online. This fee will be refunded to the original payment card within 5 working days after the conference. However, the full accommodation charge must also be paid at the hotel front desk upon arrival.</li>
+                </ul>
+
+                <h4><strong>Cancellation Policy</strong></h4>
+                <ul>
+                <li><strong>Deadline for Cancellation:</strong> Cancellations must be made before December 1, 2025.</li>
+                <li><strong>Contact for Cancellations:</strong> Livia Lei
+                    <ul>
+                    <li><strong>Email:</strong> livialei@kailimice.cn</li>
+                    <li><strong>Phone:</strong> +86-17391150391</li>
+                    </ul>
+                </li>
+                </ul>
+
+                <h4><strong>Refund Policy</strong></h4>
+                <ul>
+                <li><strong>Cancellations Before December 1, 2025:</strong> A full refund will be issued within 3 working days after the cancellation request is processed.</li>
+                <li><strong>Cancellations After December 1, 2025:</strong> No refunds will be issued, and the full room charge will be retained.</li>
+                </ul>
+
+                <h4><strong>Invoice/Receipt</strong></h4>
+                <ul>
+                <li><strong>Foreign Participants:</strong> Accommodation invoices/receipts will be emailed within a week after the conference.</li>
+                <li><strong>Chinese Participants:</strong> Accommodation invoices can be obtained at the hotel front desk upon check-out. For twin rooms, separate invoices can be issued upon request.</li>
+                </ul>
+
                 </p>
 
-                <img class="img-responsive" src="../assets/img/visiting/hotel_map.jpeg" style="margin-top: 2%;width:1200px;">
-                <img class="img-responsive" src="../assets/img/visiting/hotel_map2.png" style="margin-top: 2%;width:1200px;">
 
-                <h2><strong>Transportation to The Conference Venue</strong></h2>
-                <p>
-                    To the Xi'an Xi'anyang International Airport.<br>
-                    Distance: 54km.<br>
-                    Approximate fees and period by taxi: RMB 90 and 40 minutes.
-                </p>
+                
 
-                <p>
-                    To the nearest subway station.<br>
-                    14-minute walk to the Tang Paradise station of Line 4 of the Xi'an Subway.
-                </p>
+
 
                 </div>
             </div>
@@ -263,7 +433,7 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
             <div class="row">
                 <div class="col-md-6">
                     <p>
-                        2025 &copy; <a href="#">SIGIR-AP 2025</a> All Rights Reserved.
+                        2025 &copy; <a href=".">SIGIR-AP 2025</a> All Rights Reserved.
                     </p>
                 </div>
 
@@ -290,6 +460,7 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
                     </p>
                 </div> -->
                 <!-- End Social Links -->
+
             </div>
         </div>
     </div>
