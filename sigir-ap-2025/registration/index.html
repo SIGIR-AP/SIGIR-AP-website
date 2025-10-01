@@ -136,7 +136,7 @@
                         <li><a href="../visa-information/index.html">VISA Information</a></li>
                         <li><a href="../visiting/index.html">Visiting Xi'an</a></li>
                         <li><a href="../travel-grants/index.html">Student Travel Awards</a></li>
-                        <!-- <li><a href="../registration/index.html">Registration</a></li> -->
+                        <li><a href="../registration/index.html">Registration</a></li>
                         <li><a href="../privacy/index.html">Privacy Policy</a></li>
                     </ul>
                 </li>
@@ -222,19 +222,339 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
                    <div class="news-v3-in">
                         <!--<h2><strong>ACM SIGIR-AP 2023 Registration Guidelines</strong></h2>-->
                         
-                    <h2><strong>REGISTRATION FOR SIGIR-AP 2025 WILL OPEN SOON!</strong></h2>
+                    <h2><strong>REGISTRATION FOR SIGIR-AP 2025 IS NOW OPEN!</strong></h2>
+                    <p>
+                        SIGIR-AP 2025 is committed to fostering international collaboration and ensuring accessibility for participants from around the world. To this end, we have streamlined the registration process to accommodate both international and domestic attendees, offering the convenience of paying in two widely accepted currencies: USD (United States Dollar) for international registration and RMB (Chinese Renminbi) for domestic registration. 
+                        <br>Please note that at least one author of each accepted paper is required to register and present the paper at the conference. (We do allow one author to cover and present multiple papers - no need to pay multiple registration fees, but need to pay multiple publication fees in such a case.) 
+                        <br>SIGIR-AP 2025 is a hybrid conference allowing all registrants to choose to attend the event virtually or in person. In-person presentations are more rewarding for both the presenter and the audience. We accordingly request that at least one author of each accepted paper make reasonable efforts to attend the conference in Xi'an. If no author of a paper is able to attend in person, please make a remote presentation request to the Conference Chairs, explaining the circumstances that apply. These requests will be considered on a case-by-case basis.
+                    </p>
 
-                    <h4>Privacy Policy</h4>
-                    Detailed privacy policy can be found at: <a href="../privacy/index.html">Privacy Policy</a>
+                    <h3><strong>REGISTRATION FEES</strong></h3>
+                    <p>
+                        SIGIR-AP 2025 provides two types of registration, as listed below:
+                        <ul>
+                            <li>
+                                Full Passport: Full access to all conference events and services, including tutorials and workshops.
+                            </li>
+                            <li>
+                                Workshop only: A banquet ticket and access to the last-day conference, including workshops.
+                            </li>
+                        </ul>
+                        SIGIR-AP 2025 provides registration discounts depending on your status and registration date, as listed below:
+                        <ul>
+                            <li>
+                                Early Bird: People who register before the early-bird deadline (10/19/2025 AoE) will receive this discount.
+                            </li>
+                            <li>
+                                Online: Discounts apply if you plan to attend the conference virtually.
+                            </li>
+                            <li>
+                                ACM Member: Valid ACM members who register for the conference will receive this discount. Please be sure to register using the email address associated with your ACM membership account to receive the member discount.
+                            </li>
+                            <li>
+                                Student: Students who register for the conference will receive this discount. To get this discount, you are required to submit your scanned student ID card on the registration form.
+                            </li>
+                        </ul>
+                        The lists of registration fees are as follows.
+                       
+                        <style>
+                        /* 仅作用于 .conference-table，避免影响页面其它元素 */
+                        .conference-table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin: 20px 0;
+                        font-size: 15px;
+                        border: 1px solid #ddd;
+                        background: transparent;
+                        }
 
-                    <h4>Registration Chairs</h4>
-                    <li>
-                        Zhijing Wu, Beijing Institute of Technology, China
-                    </li>
-                    <h4>Contact</h4>
-                    <li>
-                        For further information, please contact the SIGIR-AP 2025 Registration Co-chairs by email: registration2025@sigir-ap.org
-                    </li>
+                        .conference-table th,
+                        .conference-table td {
+                        padding: 12px 15px;
+                        text-align: left;
+                        border: 1px solid #ddd;
+                        background: transparent;
+                        }
+
+                        /* 中性表头（不再是蓝色） */
+                        .conference-table thead th {
+                        background-color: #f5f5f5;
+                        font-weight: 600;
+                        font-size: 15px;
+                        }
+
+                        /* 偶数行轻微条纹（仅 td 背景）*/
+                        .conference-table tbody tr:nth-child(even) td {
+                        background-color: #fafafa;
+                        }
+
+                        /* 保证左侧合并单元格为横排文字，覆盖之前可能的写法（不会影响其他元素） */
+                        .conference-table td.passport-type,
+                        .conference-table td[rowspan] {
+                        writing-mode: horizontal-tb !important;
+                        transform: none !important;
+                        text-orientation: mixed;
+                        text-align: left;
+                        font-weight: 600;
+                        background: transparent;
+                        }
+
+                        /* 仅两种正式灰色用于 Full Passport / Workshop Only 的“第一格”背景 */
+                        .full-passport-row td:first-child {
+                        background-color: #efefef; /* 正式、低饱和度灰 */
+                        font-weight: 600;
+                        }
+
+                        .workshop-only-row td:first-child {
+                        background-color: #f7f7f7; /* 更浅的灰 */
+                        font-weight: 600;
+                        }
+
+                        /* 保留 price 的轻微加粗 */
+                        /* .conference-table .price {
+                        font-weight: 500;
+                        } */
+                         .description-cell ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                        }
+                        .description-cell li {
+                            position: relative;
+                            padding-left: 20px;
+                            margin-bottom: 8px;
+                            line-height: 1.5;
+                        }
+                        .description-cell li:before {
+                            content: "•";
+                            color: #1a73e8;
+                            font-size: 20px;
+                            position: absolute;
+                            left: 0;
+                            top: -2px;
+                        }
+                        .description-cell li:last-child {
+                            margin-bottom: 0;
+                        }
+                        </style>
+
+
+                        <h4><strong>In Person</strong></h4>
+                        <table class="conference-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Early Bird (by 10/19/2025)</th>
+                                    <th>Regular Rate (by 11/16/2025)</th>
+                                    <th>Late Rate (by 12/06/2025)</th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr class="full-passport-row">
+                                    <td rowspan="4">Full Passport</td>
+                                    <td>ACM Professional Member</td>
+                                    <td class="price">$420/￥3,000</td>
+                                    <td class="price">$560/￥4,000</td>
+                                    <td class="price">$630/￥4,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Non-Member</td>
+                                    <td class="price">$490/￥3,500</td>
+                                    <td class="price">$630/￥4,500</td>
+                                    <td class="price">$700/￥5,000</td>
+                                </tr>
+                                <tr>
+                                    <td>ACM Student Member</td>
+                                    <td class="price">$210/￥1,500</td>
+                                    <td class="price">$350/￥2,500</td>
+                                    <td class="price">$420/￥3,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Student Non-Member</td>
+                                    <td class="price">$280/￥2,000</td>
+                                    <td class="price">$420/￥3,000</td>
+                                    <td class="price">$490/￥3,500</td>
+                                </tr>
+                                <tr class="workshop-only-row">
+                                    <td rowspan="4">Workshop Only</td>
+                                    <td>ACM Professional Member</td>
+                                    <td class="price">$140/￥1,000</td>
+                                    <td class="price">$175/￥1,250</td>
+                                    <td class="price">$210/￥1,500</td>
+                                </tr>
+                                <tr>
+                                    <td>Non-Member</td>
+                                    <td class="price">$175/￥1,250</td>
+                                    <td class="price">$210/￥1,500</td>
+                                    <td class="price">$245/￥1,750</td>
+                                </tr>
+                                <tr>
+                                    <td>ACM Student Member</td>
+                                    <td class="price">$90/￥650</td>
+                                    <td class="price">$125/￥900</td>
+                                    <td class="price">$160/￥1,150</td>
+                                </tr>
+                                <tr>
+                                    <td>Student Non-Member</td>
+                                    <td class="price">$125/￥900</td>
+                                    <td class="price">$160/￥1,150</td>
+                                    <td class="price">$195/￥1,400</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h4><strong>Online</strong></h4>
+                        <table class="conference-table">
+                        <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Early Bird (by 10/19/2025)</th>
+                                    <th>Regular Rate (by 11/16/2025)</th>
+                                    <th>Late Rate (by 12/06/2025)</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="full-passport-row">
+                        <td rowspan="4">Full Passport</td>
+                        <td>ACM Professional Member</td>
+                        <td class="price">$210/￥1,500</td>
+                        <td class="price">$280/￥2,000</td>
+                        <td class="price">$315/￥2,250</td>
+                        </tr>
+                        <tr>
+                        <td>Non-Member</td>
+                        <td class="price">$280/￥2,000</td>
+                        <td class="price">$350/￥2,500</td>
+                        <td class="price">$385/￥2,750</td>
+                        </tr>
+                        <tr>
+                        <td>ACM Student Member</td>
+                        <td class="price">$105/￥750</td>
+                        <td class="price">$140/￥1,000</td>
+                        <td class="price">$175/￥1,250</td>
+                        </tr>
+                        <tr>
+                        <td>Student Non-Member</td>
+                        <td class="price">$175/￥1,250</td>
+                        <td class="price">$210/￥1,500</td>
+                        <td class="price">$245/￥1,750</td>
+                        </tr>
+                        <tr class="workshop-only-row">
+                        <td rowspan="4">Workshop Only</td>
+                        <td>ACM Professional Member</td>
+                        <td class="price">$14/￥100</td>
+                        <td class="price">$28/￥200</td>
+                        <td class="price">$42/￥300</td>
+                        </tr>
+                        <tr>
+                        <td>Non-Member</td>
+                        <td class="price">$35/￥250</td>
+                        <td class="price">$49/￥350</td>
+                        <td class="price">$63/￥450</td>
+                        </tr>
+                        <tr>
+                        <td>ACM Student Member</td>
+                        <td class="price">$7/￥50</td>
+                        <td class="price">$14/￥100</td>
+                        <td class="price">$21/￥150</td>
+                        </tr>
+                        <tr>
+                        <td>Student Non-Member</td>
+                        <td class="price">$14/￥100</td>
+                        <td class="price">$28/￥200</td>
+                        <td class="price">$35/￥250</td>
+                        </tr>
+                        </tbody>
+                        </table>
+
+                    <h3><strong>EXTRA FEES</strong></h3>
+                    Several types of extra fees may apply to your registration, as listed below:
+                    <table class="conference-table">
+                    <thead>
+                        <tr>
+                        <th>Extra Fee Types</th>
+                        <th>Rates</th>
+                        <th>Descriptions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td rowspan="3", style="font-weight: bold;">Publication Fee</td>
+                        <td rowspan="3", style="font-weight: normal;">$210/¥1,500</td>
+                        <td rowspan="3", class="description-cell", style="font-weight: normal;">
+                            <ul>
+                                <li>Each paper published in SIGIR-AP 2025 requires an extra publication fee of RMB ¥1500 or USD $210.</li>
+                                <li>Authors or presenters can include this publication fee when they pay their registration fee (must provide the submission ID and title of the paper in the registration process).</li>
+                                <li>Tutorial and workshop proposals are exempt from the publication fee.</li>
+                            </ul>
+                        </td>
+                        </tr>
+                        <tr>
+                        <!-- 空行用于保持行数一致 -->
+                        </tr>
+                        <tr>
+                        <!-- 空行用于保持行数一致 -->
+                        </tr>
+                        <tr>
+                        <td rowspan="3", style="font-weight: bold;">Dinner Reception Ticket</td>
+                        <td>$50/¥360 (Early Bird)</td>
+                        <td rowspan="3", class="description-cell", style="font-weight: normal;">
+                            <ul>
+                                <li>
+                            One dinner reception ticket is included with one in-person registration. This purchase is for attendees who need to purchase a Dinner Reception Ticket for their Guest.
+                                </li>
+                            </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>$60/¥430 (Regular)</td>
+                        </tr>
+                        <tr>
+                        <td>$70/¥500 (Late)</td>
+                        </tr>
+                        <tr>
+                        <td style="font-weight: bold;">Carbon Purchase (Optional)</td>
+                        <td>$25/¥200</td>
+                        <td class="description-cell">
+                            <ul>
+                                <li>
+                                    As a part of SIGIR-AP's effort to be carbon neutral, attendees are encouraged to purchase carbon credits for their attendance of the conference.
+                                </li>
+                            </ul>
+                        </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <h3><strong>REGISTRATION PORTAL</strong></h3>
+                    The registration portals are listed below. Please note that:
+                    <ul>
+                    <li><strong>Student Travel Grant:</strong> If you are applying for a SIGIR student travel grant, please refrain from registering until the results are announced. Successful applicants will receive personalized registration instructions at a later date. For more information, visit the <a href="https://www.sigir-ap.org/sigir-ap-2025/travel-grants/index.html">SIGIR student travel grant page.</a></li>
+                    <li><strong>Tutorial and Workshop authors:</strong> Tutorial authors will receive one complimentary full-conference registration, and workshop organizers will receive two. Please contact <a href="registration2025@sigir-ap.org">registration2025@sigir-ap.org</a> to specify who will use the free registration and provide their email address.</li>
+                    <li><strong>ACM Membership:</strong> ACM members, please ensure that you register using the email address associated with your ACM membership account to receive the member discount.</li>
+                    <li><strong>VISA Support Letter:</strong> Individuals who need a Chinese visa can request a visa support letter from ACM after registering through the international registration portal. Alternatively, you can obtain an invitation letter from the conference organizers by contacting <a href="registration2025@sigir-ap.org">registration2025@sigir-ap.org</a>, providing your full name, gender, date of birth, passport number, and institution.</li>
+                    <li><strong>Registration Confirmation:</strong> International participants will receive a confirmation email upon successful payment, while domestic participants will receive a confirmation email once their registration is successfully verified.</li>
+                    <li><strong>Invoice:</strong> An electronic invoice for the registration fee will be emailed to you within 5 business days after the event. Participants registering through the domestic portal will receive an official VAT invoice (Fapiao), while those registering through the international portal will receive an invoice/receipt.</li>
+                    </ul>
+                    
+                    International Registration Portal: <a href="https://cvent.me/nEbBGq">https://cvent.me/nEbBGq</a>
+                    <br>Domestic Registration Portal: <a href="https://avqvc2ndkbj.feishu.cn/share/base/form/shrcnZ36OfP4GqmGDR3CiYC4bhe">https://avqvc2ndkbj.feishu.cn/share/base/form/shrcnZ36OfP4GqmGDR3CiYC4bhe</a>
+                    </p>
+
+                    <h3><strong>CANCELLATION POLICY</strong></h3>
+                    No refunds except in the case of visa denial. If your visa is denied, you will be refunded the full registration amount less a $50 processing fee.
+
+                    <h3><strong>HOTEL RESERVATION</strong></h3>
+                    The conference has secured discounted rates for attendees at both the conference hotel and a nearby hotel. These special rates can be accessed through the booking link: <a href="https://www.sigir-ap.org/sigir-ap-2025/venue/hotel_reservation.html">https://www.sigir-ap.org/sigir-ap-2025/venue/hotel_reservation.html</a>.
+
+                    <h3><strong>SIGIR-AP 2025 REGISTRATION CHAIR</strong></h3>
+                    Zhijing Wu, 
+                    <br>Beijing Institute of Technology, China
+                    <br>Email: <a href="registration2025@sigir-ap.org">registration2025@sigir-ap.org</a>
+                    <br>If you have any inquiries, please do not hesitate to contact us.
+                        
 
 
 
