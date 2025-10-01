@@ -451,153 +451,173 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
 
                     <h3><strong>EXTRA FEES</strong></h3>
                     Several types of extra fees may apply to your registration, as listed below:
+    <style>
 
-                    <style>
-                    /* Extra fee 表格专用样式 */
-                    .extra-fee-table {
-                    width: 100%;
-                    border-collapse: separate;
-                    border-spacing: 0;
-                    margin: 25px 0;
-                    font-size: 15px;
-                    font-family: "Segoe UI", Arial, sans-serif;
-                    border: 1px solid #ddd;
-                    border-radius: 8px;
-                    overflow: hidden;
-                    }
+        
+        .extra-fee-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 30px 0;
+            font-size: 16px;
+            font-family: "Segoe UI", Arial, sans-serif;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
 
-                    /* 表头 */
-                    .extra-fee-table thead th {
-                    background-color: #f8f9fa;
-                    color: #333;
-                    font-weight: 600;
-                    text-align: center;
-                    padding: 12px;
-                    border-bottom: 1px solid #ddd;
-                    }
+        /* 表头样式 - 移除蓝色背景 */
+        .extra-fee-table thead th {
+            background-color: #f5f5f5; /* 改为灰色 */
+            color: #333; /* 改为深灰色 */
+            font-weight: 600;
+            text-align: center;
+            padding: 16px;
+            border-bottom: 2px solid #ddd;
+            font-size: 17px;
+        }
 
-                    /* 单元格 */
-                    .extra-fee-table td {
-                    padding: 12px 14px;
-                    border-bottom: 1px solid #eee;
-                    vertical-align: middle;
-                    background-color: #fff;
-                    }
 
-                    /* 列宽分配：Descriptions 更宽 */
-                    .extra-fee-table th:nth-child(1),
-                    .extra-fee-table td:nth-child(1) {
-                    width: 18%;
-                    text-align: center;
-                    font-weight: normal;
-                    background-color: #fafafa;
-                    }
+        /* 第一列加粗 */
+        .extra-fee-table th:first-child,
+        .extra-fee-table td:first-child {
+            font-weight: 600;
+            text-align: center;
+            background-color: #fafafa;
+            width: 20%;
+        }
 
-                    .extra-fee-table th:nth-child(2),
-                    .extra-fee-table td:nth-child(2) {
-                    width: 15%;
-                    text-align: center;
-                    font-weight: normal;
-                    vertical-align: middle;
-                    }
+        /* 第二列不加粗 */
+        .extra-fee-table td:nth-child(2) {
+            font-weight: normal;
+            text-align: center;
+            width: 15%;
+        }
 
-                    .extra-fee-table th:nth-child(3),
-                    .extra-fee-table td:nth-child(3) {
-                    width: 67%; /* 描述列最大 */
-                    }
+        /* 第三列 */
+        .extra-fee-table th:nth-child(3),
+        .extra-fee-table td:nth-child(3) {
+            width: 65%;
+        }
+        
 
-                    .extra-fee-table .description-cell {
-                        vertical-align: middle; /* 中间对齐 */
-                    }
+        /* 价格单元格 - 确保不加粗 */
+        .price-cell {
+            font-weight: normal !important;
+        }
 
-                    /* 行条纹 */
-                    .extra-fee-table tbody tr:nth-child(even) td {
-                    background-color: #fcfcfc;
-                    }
+        /* description 列垂直居中 */
+        .extra-fee-table .description-cell {
+            vertical-align: middle;
+            padding: 16px;
+        }
 
-                    /* Hover */
-                    .extra-fee-table tbody tr:hover td {
-                    background-color: #f4faff;
-                    }
+        /* 行条纹 */
+        .extra-fee-table tbody tr:nth-child(even) td {
+            background-color: #fcfcfc;
+        }
 
-                    /* 列表美化 */
-                    .extra-fee-table .description-cell ul {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                    }
+        /* Hover */
+        .extra-fee-table tbody tr:hover td {
+            background-color: #f4faff;
+        }
 
-                    .extra-fee-table .description-cell li {
-                    position: relative;
-                    padding-left: 18px;
-                    margin-bottom: 8px;
-                    line-height: 1.5;
-                    }
+        /* 列表美化 */
+        .extra-fee-table .description-cell ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-                    .extra-fee-table .description-cell li:before {
-                    content: "•";
-                    color: #007BFF;
-                    font-size: 16px;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    }
+        .extra-fee-table .description-cell li {
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
 
-                    .extra-fee-table .description-cell li:last-child {
-                    margin-bottom: 0;
-                    vertical-align: middle;
-                    }
-                    </style>
+        .extra-fee-table .description-cell li:before {
+            content: "•";
+            color: #007BFF;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
 
-                    <table class="extra-fee-table">
-                    <thead>
-                        <tr>
-                        <th>Extra Fee Types</th>
-                        <th>Rates</th>
-                        <th>Descriptions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <td rowspan="3">Publication Fee</td>
-                        <td rowspan="3">$210/¥1,500</td>
-                        <td rowspan="3" class="description-cell">
-                            <ul>
+        .extra-fee-table .description-cell li:last-child {
+            margin-bottom: 0;
+        }
+        
+        .extra-fee-table td {
+            padding: 14px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+        
+        <table class="extra-fee-table">
+            <thead>
+                <tr>
+                    <th>Extra Fee Types</th>
+                    <th>Rates</th>
+                    <th>Descriptions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Publication Fee</td>
+                    <td rowspan="3">$210/¥1,500</td>
+                    <td rowspan="3" class="description-cell">
+                        <ul>
                             <li>Each paper published in SIGIR-AP 2025 requires an extra publication fee of RMB ¥1500 or USD $210.</li>
                             <li>Authors or presenters can include this publication fee when they pay their registration fee (must provide the submission ID and title of the paper in the registration process).</li>
                             <li>Tutorial and workshop proposals are exempt from the publication fee.</li>
-                            </ul>
-                        </td>
-                        </tr>
-                        <tr></tr><tr></tr>
+                        </ul>
+                    </td>
+                </tr>
+                <!-- Empty rows for rowspan -->
+                <tr></tr>
+                <tr></tr>
 
-                        <tr>
-                        <td rowspan="3">Dinner Reception Ticket</td>
-                        <td>$50/¥360 (Early Bird)</td>
-                        <td rowspan="3" class="description-cell">
-                            <ul>
+                <tr>
+                    <td rowspan="3">Dinner Reception Ticket</td>
+                    <td class="price-cell">$50/¥360 (Early Bird)</td>
+                    <td rowspan="3" class="description-cell">
+                        <ul>
                             <li>One dinner reception ticket is included with one in-person registration. This purchase is for attendees who need to purchase a Dinner Reception Ticket for their Guest.</li>
-                            </ul>
-                        </td>
-                        </tr>
-                        <tr>
-                        <td>$60/¥430 (Regular)</td>
-                        </tr>
-                        <tr>
-                        <td>$70/¥500 (Late)</td>
-                        </tr>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="price-cell">$60/¥430 (Regular)</td>
+                </tr>
+                <tr>
+                    <td class="price-cell">$70/¥500 (Late)</td>
+                </tr>
 
-                        <tr>
-                        <td>Carbon Purchase (Optional)</td>
-                        <td>$25/¥200</td>
-                        <td class="description-cell">
-                            <ul>
+                <tr>
+                    <td>Carbon Purchase (Optional)</td>
+                    <td class="price-cell">$25/¥200</td>
+                    <td class="description-cell">
+                        <ul>
                             <li>As a part of SIGIR-AP's effort to be carbon neutral, attendees are encouraged to purchase carbon credits for their attendance of the conference.</li>
-                            </ul>
-                        </td>
-                        </tr>
-                    </tbody>
-                    </table>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
 
 
                     <h3><strong>REGISTRATION PORTAL</strong></h3>
