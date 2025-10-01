@@ -258,85 +258,64 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
                         The lists of registration fees are as follows.
                        
                         <style>
-                        /* 仅作用于 .conference-table，避免影响页面其它元素 */
+                        /* 整体表格样式 */
+                        
                         .conference-table {
                         width: 100%;
                         border-collapse: collapse;
-                        margin: 20px 0;
+                        margin: 25px 0;
                         font-size: 15px;
-                        border: 1px solid #ddd;
-                        background: transparent;
+                        font-family: "Segoe UI", Arial, sans-serif;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
                         }
 
-                        .conference-table th,
-                        .conference-table td {
-                        padding: 12px 15px;
-                        text-align: left;
-                        border: 1px solid #ddd;
-                        background: transparent;
-                        }
-
-                        /* 中性表头（不再是蓝色） */
+                        /* 表头 */
                         .conference-table thead th {
-                        background-color: #f5f5f5;
+                        background-color: #f1f3f5;
+                        color: #333;
                         font-weight: 600;
+                        text-align: left;
+                        padding: 14px;
+                        border-bottom: 2px solid #ddd;
                         font-size: 15px;
                         }
 
-                        /* 偶数行轻微条纹（仅 td 背景）*/
-                        .conference-table tbody tr:nth-child(even) td {
-                        background-color: #fafafa;
+                        /* 单元格 */
+                        .conference-table td {
+                        padding: 12px 16px;
+                        border-bottom: 1px solid #eee;
+                        vertical-align: middle;
                         }
 
-                        /* 保证左侧合并单元格为横排文字，覆盖之前可能的写法（不会影响其他元素） */
-                        .conference-table td.passport-type,
+                        /* 左侧类别列 */
                         .conference-table td[rowspan] {
-                        writing-mode: horizontal-tb !important;
-                        transform: none !important;
-                        text-orientation: mixed;
-                        text-align: left;
+                        background-color: #f8f9fa;
                         font-weight: 600;
-                        background: transparent;
+                        text-align: center;
+                        color: #444;
+                        width: 140px;
                         }
 
-                        /* 仅两种正式灰色用于 Full Passport / Workshop Only 的“第一格”背景 */
-                        .full-passport-row td:first-child {
-                        background-color: #efefef; /* 正式、低饱和度灰 */
-                        font-weight: 600;
+                        /* 奇偶行条纹 */
+                        .conference-table tbody tr:nth-child(even) {
+                        background-color: #fcfcfc;
                         }
 
-                        .workshop-only-row td:first-child {
-                        background-color: #f7f7f7; /* 更浅的灰 */
-                        font-weight: 600;
+                        /* Hover 效果 */
+                        .conference-table tbody tr:hover {
+                        background-color: #f1f9ff;
                         }
 
-                        /* 保留 price 的轻微加粗 */
+                        /* 价格加粗 */
                         /* .conference-table .price {
                         font-weight: 500;
+                        color: #222;
+                        text-align: center;
                         } */
-                         .description-cell ul {
-                            list-style: none;
-                            padding: 0;
-                            margin: 0;
-                        }
-                        .description-cell li {
-                            position: relative;
-                            padding-left: 20px;
-                            margin-bottom: 8px;
-                            line-height: 1.5;
-                        }
-                        .description-cell li:before {
-                            content: "•";
-                            color: #1a73e8;
-                            font-size: 20px;
-                            position: absolute;
-                            left: 0;
-                            top: -2px;
-                        }
-                        .description-cell li:last-child {
-                            margin-bottom: 0;
-                        }
                         </style>
+
 
 
                         <h4><strong>In Person</strong></h4>
@@ -472,7 +451,105 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
 
                     <h3><strong>EXTRA FEES</strong></h3>
                     Several types of extra fees may apply to your registration, as listed below:
-                    <table class="conference-table">
+
+                    <style>
+                    /* Extra fee 表格专用样式 */
+                    .extra-fee-table {
+                    width: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0;
+                    margin: 25px 0;
+                    font-size: 15px;
+                    font-family: "Segoe UI", Arial, sans-serif;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    }
+
+                    /* 表头 */
+                    .extra-fee-table thead th {
+                    background-color: #f8f9fa;
+                    color: #333;
+                    font-weight: 600;
+                    text-align: center;
+                    padding: 12px;
+                    border-bottom: 1px solid #ddd;
+                    }
+
+                    /* 单元格 */
+                    .extra-fee-table td {
+                    padding: 12px 14px;
+                    border-bottom: 1px solid #eee;
+                    vertical-align: middle;
+                    background-color: #fff;
+                    }
+
+                    /* 列宽分配：Descriptions 更宽 */
+                    .extra-fee-table th:nth-child(1),
+                    .extra-fee-table td:nth-child(1) {
+                    width: 18%;
+                    text-align: center;
+                    font-weight: normal;
+                    background-color: #fafafa;
+                    }
+
+                    .extra-fee-table th:nth-child(2),
+                    .extra-fee-table td:nth-child(2) {
+                    width: 15%;
+                    text-align: center;
+                    font-weight: normal;
+                    vertical-align: middle;
+                    }
+
+                    .extra-fee-table th:nth-child(3),
+                    .extra-fee-table td:nth-child(3) {
+                    width: 67%; /* 描述列最大 */
+                    }
+
+                    .extra-fee-table .description-cell {
+                        vertical-align: middle; /* 中间对齐 */
+                    }
+
+                    /* 行条纹 */
+                    .extra-fee-table tbody tr:nth-child(even) td {
+                    background-color: #fcfcfc;
+                    }
+
+                    /* Hover */
+                    .extra-fee-table tbody tr:hover td {
+                    background-color: #f4faff;
+                    }
+
+                    /* 列表美化 */
+                    .extra-fee-table .description-cell ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    }
+
+                    .extra-fee-table .description-cell li {
+                    position: relative;
+                    padding-left: 18px;
+                    margin-bottom: 8px;
+                    line-height: 1.5;
+                    }
+
+                    .extra-fee-table .description-cell li:before {
+                    content: "•";
+                    color: #007BFF;
+                    font-size: 16px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    }
+
+                    .extra-fee-table .description-cell li:last-child {
+                    margin-bottom: 0;
+                    vertical-align: middle;
+                    }
+                    </style>
+
+                    <table class="extra-fee-table">
                     <thead>
                         <tr>
                         <th>Extra Fee Types</th>
@@ -482,32 +559,26 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
                     </thead>
                     <tbody>
                         <tr>
-                        <td rowspan="3", style="font-weight: bold;">Publication Fee</td>
-                        <td rowspan="3", style="font-weight: normal;">$210/¥1,500</td>
-                        <td rowspan="3", class="description-cell", style="font-weight: normal;">
+                        <td rowspan="3">Publication Fee</td>
+                        <td rowspan="3">$210/¥1,500</td>
+                        <td rowspan="3" class="description-cell">
                             <ul>
-                                <li>Each paper published in SIGIR-AP 2025 requires an extra publication fee of RMB ¥1500 or USD $210.</li>
-                                <li>Authors or presenters can include this publication fee when they pay their registration fee (must provide the submission ID and title of the paper in the registration process).</li>
-                                <li>Tutorial and workshop proposals are exempt from the publication fee.</li>
+                            <li>Each paper published in SIGIR-AP 2025 requires an extra publication fee of RMB ¥1500 or USD $210.</li>
+                            <li>Authors or presenters can include this publication fee when they pay their registration fee (must provide the submission ID and title of the paper in the registration process).</li>
+                            <li>Tutorial and workshop proposals are exempt from the publication fee.</li>
                             </ul>
                         </td>
                         </tr>
+                        <tr></tr><tr></tr>
+
                         <tr>
-                        <!-- 空行用于保持行数一致 -->
-                        </tr>
-                        <tr>
-                        <!-- 空行用于保持行数一致 -->
-                        </tr>
-                        <tr>
-                        <td rowspan="3", style="font-weight: bold;">Dinner Reception Ticket</td>
+                        <td rowspan="3">Dinner Reception Ticket</td>
                         <td>$50/¥360 (Early Bird)</td>
-                        <td rowspan="3", class="description-cell", style="font-weight: normal;">
+                        <td rowspan="3" class="description-cell">
                             <ul>
-                                <li>
-                            One dinner reception ticket is included with one in-person registration. This purchase is for attendees who need to purchase a Dinner Reception Ticket for their Guest.
-                                </li>
+                            <li>One dinner reception ticket is included with one in-person registration. This purchase is for attendees who need to purchase a Dinner Reception Ticket for their Guest.</li>
                             </ul>
-                            </td>
+                        </td>
                         </tr>
                         <tr>
                         <td>$60/¥430 (Regular)</td>
@@ -515,19 +586,20 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
                         <tr>
                         <td>$70/¥500 (Late)</td>
                         </tr>
+
                         <tr>
-                        <td style="font-weight: bold;">Carbon Purchase (Optional)</td>
+                        <td>Carbon Purchase (Optional)</td>
                         <td>$25/¥200</td>
                         <td class="description-cell">
                             <ul>
-                                <li>
-                                    As a part of SIGIR-AP's effort to be carbon neutral, attendees are encouraged to purchase carbon credits for their attendance of the conference.
-                                </li>
+                            <li>As a part of SIGIR-AP's effort to be carbon neutral, attendees are encouraged to purchase carbon credits for their attendance of the conference.</li>
                             </ul>
                         </td>
                         </tr>
                     </tbody>
                     </table>
+
+
                     <h3><strong>REGISTRATION PORTAL</strong></h3>
                     The registration portals are listed below. Please note that:
                     <ul>
@@ -539,8 +611,21 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
                     <li><strong>Invoice:</strong> An electronic invoice for the registration fee will be emailed to you within 5 business days after the event. Participants registering through the domestic portal will receive an official VAT invoice (Fapiao), while those registering through the international portal will receive an invoice/receipt.</li>
                     </ul>
                     
-                    International Registration Portal: <a href="https://cvent.me/nEbBGq">International Registration Portal</a>
-                    <br>Domestic Registration Portal: <a href="https://avqvc2ndkbj.feishu.cn/share/base/form/shrcnZ36OfP4GqmGDR3CiYC4bhe">Domestic Registration Portal</a>
+                    <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+                        <a href="https://cvent.me/nEbBGq" target="_blank" style="text-decoration: none;">
+                            <button style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 6px; cursor: pointer;">
+                                International Registration Portal
+                            </button>
+                        </a>
+
+                        <a href="https://avqvc2ndkbj.feishu.cn/share/base/form/shrcnZ36OfP4GqmGDR3CiYC4bhe" target="_blank" style="text-decoration: none;">
+                            <button style="padding: 10px 20px; background-color: #28A745; color: white; border: none; border-radius: 6px; cursor: pointer;">
+                                Domestic Registration Portal
+                            </button>
+                        </a>
+                    </div>
+
+
                     </p>
 
                     <h3><strong>CANCELLATION POLICY</strong></h3>
