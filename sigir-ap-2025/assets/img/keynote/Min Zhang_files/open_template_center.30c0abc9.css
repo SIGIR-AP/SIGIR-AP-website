@@ -1,0 +1,64 @@
+.wiki-dialog-content{color:var(--text-title);font-size:14px;padding:0 20px}
+
+/*! *****************************************************************************
+                              这里是与设计对其的标准色盘
+注意：所有的颜色须从色盘中提取，不得擅自添加颜色。若设计师给出的UI稿中带有色盘中不存在的颜色，
+请与王坤联系并确认。
+***************************************************************************** */
+/*! **************************************
+        Naming Rule:
+          modules(BEM) + rule name
+
+        Example:
+          @main-container-bg
+*****************************************/.meetingLeaveNotify{background-color:var(--bg-body);border:solid 1px var(--line-border-card);border-radius:4px;box-shadow:0 12px 48px 2px rgba(var(--N300-FG-raw),.08);height:184px;position:relative;width:440px}.meetingLeaveNotify .ud__modal__body{margin-bottom:0;padding:16px}.meetingLeaveNotify .close{height:16px;object-fit:contain;position:absolute;right:16px;top:19px;width:16px}.meetingLeaveNotify .title{font-size:16px;font-weight:600;line-height:normal;padding-bottom:13px}.meetingLeaveNotify .detail,.meetingLeaveNotify .title{color:var(--text-title);font-stretch:normal;font-style:normal;letter-spacing:normal}.meetingLeaveNotify .detail{font-size:14px;font-weight:400;height:82px;line-height:1.43}.meetingLeaveNotify .detail .radio{margin-top:20px}.meetingLeaveNotify .detail .radio-label{align-items:center;display:flex}.meetingLeaveNotify .detail .radio-checkbox{margin-right:8px}.meetingLeaveNotify .detail .presenter{font-weight:500px}.meetingLeaveNotify .icon_flex{display:flex;justify-content:space-between}.meetingLeaveNotify .icon_algin{text-align:right}.meetingLeaveNotify .icon_line{height:32px}.meetingLeaveNotify .icon_line .main{margin-left:8px}.popover-loading{background-color:var(--bg-float);border-radius:8px;height:100%;left:0;min-height:48px;position:relative;width:320px}
+
+/*! *****************************************************************************
+                              这里是与设计对其的标准色盘
+注意：所有的颜色须从色盘中提取，不得擅自添加颜色。若设计师给出的UI稿中带有色盘中不存在的颜色，
+请与王坤联系并确认。
+***************************************************************************** */
+/*! **************************************
+        Naming Rule:
+          modules(BEM) + rule name
+
+        Example:
+          @main-container-bg
+*****************************************/.profile-modal.bg-white{background:var(--bg-body)}.profile-modal.bg-white .profile-tenant{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto}.mention-pop__avatar{height:200px;position:relative;width:280px}.mention-pop__avatar .avatar-holder{background:var(--ccmtoken-mindnote-highlightcolor-neutral);border-top-left-radius:4px;border-top-right-radius:4px;height:100%}.mention-pop__avatar .avatar-wrapper{border-top-left-radius:4px;border-top-right-radius:4px;cursor:default;display:block;height:200px;overflow:hidden;width:278px}.mention-pop__avatar .avatar-wrapper .avatar-mask{background-image:linear-gradient(-180deg,rgba(var(--bg-tips-raw),.4) 0,var(--N1000-BG) 50%);bottom:0;left:1px;opacity:.1;position:absolute;right:1px;top:0;transition:all .2s ease}.mention-pop__avatar .avatar-wrapper .avatar-name{bottom:16px;color:var(--N00-FG);font-size:18px;font-weight:500;left:16px;opacity:1;position:absolute;transition:all .2s ease}.mention-pop__avatar .avatar-wrapper:hover .avatar-mask,.mention-pop__avatar .avatar-wrapper:hover .avatar-name{opacity:0}.mention-pop__infos{padding:0 18px;position:relative}.mention-pop__info{line-height:20px;margin-top:16px;position:relative}.mention-pop__info:last-of-type{padding-bottom:16px}.mention-pop__title{color:var(--text-placeholder);display:inline-block;font-size:14px;text-align:left;width:86px}.mention-pop__deleted{width:100%}.mention-pop__desc{color:var(--text-title);font-size:14px;word-break:break-word}.mention-pop__external_concat{border-radius:4px;font-size:14px;font-weight:400;height:32px;line-height:32px;width:100%}.mention-pop__chat,.mention-pop__external_concat{background:var(--B500-BG);color:var(--N00-FG);text-align:center}.mention-pop__chat{border-radius:50%;bottom:-15px;box-shadow:0 5px 12px 0 rgba(var(--N900-FG-raw),.16);height:44px;position:absolute;right:13px;width:44px}.mention-pop__chat:hover{text-decoration:none!important}.mention-pop__chat .icon-wrap{margin-top:7px}.mention-pop__chat .text{color:var(--N00-FG);font-size:12px;transform:scale(.8)}.user-popover-container{line-height:1;position:relative}.user-popover-container .grant-user-permission-wrap,.user-popover-container .grant-user-permission-wrap button{width:100%}.user-popover-container .grant-user-permission-wrap button span{justify-content:center}.user-popover-container .larkw-userprofile__profile__footer-section button:disabled{pointer-events:none}
+/*! *****************************************************************************
+                              这里是与设计对其的标准色盘
+注意：所有的颜色须从色盘中提取，不得擅自添加颜色。若设计师给出的UI稿中带有色盘中不存在的颜色，
+请与王坤联系并确认。
+***************************************************************************** */
+/*! **************************************
+        Naming Rule:
+          modules(BEM) + rule name
+
+        Example:
+          @main-container-bg
+*****************************************/.mention-popover{background-color:var(--bg-float);border-radius:8px;box-shadow:0 3px 12px 2px var(--shadow-default-sm);position:absolute;z-index:2061}.mention-popover.doc.mention-profile{background-color:transparent;border:none;width:320px;z-index:2061}.mention-popover.doc.mention-profile--docs{border:none;min-width:auto;transform:translateX(-50%);width:auto}.mention-popover .popover-loading{background-color:var(--bg-float);border-radius:8px;height:100%;left:0;min-height:48px;position:relative;width:320px}.mention-popover.comment{background-color:var(--bg-float);border:none;height:48px;min-height:48px;width:240px}.mention-popover .m-mention-container{border:none;box-shadow:0 0 0 0}.popover-fade-enter{opacity:0}.popover-fade-enter.popover-fade-enter-active{opacity:1;transition:opacity .3s ease-in-out}.popover-fade-exit{opacity:1}.popover-fade-exit.popover-fade-exit-active{opacity:0;transition:opacity .3s ease-in-out}
+/*! *****************************************************************************
+                              这里是与设计对其的标准色盘
+注意：所有的颜色须从色盘中提取，不得擅自添加颜色。若设计师给出的UI稿中带有色盘中不存在的颜色，
+请与王坤联系并确认。
+***************************************************************************** */
+/*! **************************************
+        Naming Rule:
+          modules(BEM) + rule name
+
+        Example:
+          @main-container-bg
+*****************************************/.cooperater-user-popover{box-sizing:content-box;position:absolute;width:320px;z-index:2061}.cooperater-user-popover .mention-popover{background-color:transparent;border:none;position:relative;width:320px}.cooperater-user-popover--docs{min-height:auto;position:absolute;width:auto}.cooperater-user-popover--docs .mention-popover{position:relative;width:auto}.cooperater-user-popover--docs.cooperater-user-popover_b{transform:translateX(-50%)}.cooperater-user-popover--docs.cooperater-user-popover_l{transform:translateY(-50%)}
+
+/*! *****************************************************************************
+                              这里是与设计对其的标准色盘
+注意：所有的颜色须从色盘中提取，不得擅自添加颜色。若设计师给出的UI稿中带有色盘中不存在的颜色，
+请与王坤联系并确认。
+***************************************************************************** */
+/*! **************************************
+        Naming Rule:
+          modules(BEM) + rule name
+
+        Example:
+          @main-container-bg
+*****************************************/.innerdocbody.adit-container ul.r-list-done li{color:var(--text-caption)}.common-flex-vertical-center{align-items:center;display:flex;justify-content:center}.common-animation-enter{animation-duration:.1s;animation-fill-mode:forwards;animation-name:bottom-right-enter;animation-timing-function:ease}.common-animation-leave{animation-duration:.1s;animation-fill-mode:forwards;animation-name:bottom-right-leave;animation-timing-function:ease-in}@keyframes bottom-right-enter{0%{opacity:0;transform:translate3d(20%,-20%,0) scale(.6)}to{opacity:1;transform:translateZ(0) scale(1)}}@keyframes bottom-right-leave{0%{opacity:1;transform:translateZ(0) scale(1)}to{opacity:0;transform:translate3d(20%,-20%,0) scale(.6)}}.explorer-remove-failed-info__content-container{padding:16px}.explorer-remove-failed-info__content-container [data-sel=spark-icon-close-dialog]{height:20px;width:20px}.explorer-remove-failed-info__title-container{align-items:center;display:flex;padding:0;width:auto}.explorer-remove-failed-info__body-container{color:var(--text-title);font-size:14px;padding:32px 0 0}.explorer-remove-failed-info__desc{word-break:break-word}.explorer-remove-failed-info__box{border:1px solid var(--line-border-card);border-radius:4px;margin-top:16px}.explorer-remove-failed-info__item{align-items:center;border-bottom:1px solid var(--line-border-card);cursor:pointer;display:flex;height:44px;justify-content:space-between;overflow:hidden;padding:8px 16px;width:100%}.explorer-remove-failed-info__item:last-of-type{border:none}.explorer-remove-failed-info__item:hover{background-color:var(--bg-filler)}.explorer-remove-failed-info__item-left{align-items:center;display:flex;overflow:hidden}.explorer-remove-failed-info__item-icon{height:24px;position:relative;width:24px}.explorer-remove-failed-info__item-name{margin-left:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.explorer-remove-failed-info__item-user{align-items:center;border-radius:4px;display:flex;padding:4px}.explorer-remove-failed-info__item-user:hover{background-color:rgba(var(--N900-raw),.1);transition:background-color .1s linear}.explorer-remove-failed-info__item-user:active{background-color:rgba(var(--N900-raw),.15);transition:background-color .1s linear}.explorer-remove-failed-info__item-avatar{border-radius:50%;height:16px;width:16px}.explorer-remove-failed-info__item-user-name{color:var(--text-caption);margin-left:4px;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.explorer-remove-failed-info__footer{padding-top:24px;text-align:right}.wiki-common-title-tooltip{background:var(--N700);border-radius:4px;color:var(--bg-body);display:block;font-size:10px;padding:2px 8px;position:absolute;white-space:nowrap;z-index:9999}.location-dropdown-menu .location-dropdown-filter-disabled{color:var(--N500);cursor:default;font-weight:500;margin-left:0;padding-left:11px;pointer-events:none}.location-dropdown-menu .location-dropdown-filter-disabled:hover{background:none}.location-dropdown-menu .location-dropdown-menu-item{align-items:center;display:flex}.location-dropdown-menu .location-dropdown-menu-item-title{display:block;font-weight:400;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.location-dropdown-my-personal-space-icon{font-size:16px;height:16px;width:16px}

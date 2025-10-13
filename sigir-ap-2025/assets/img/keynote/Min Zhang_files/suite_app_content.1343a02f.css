@@ -1,0 +1,12 @@
+/*! *****************************************************************************
+                              这里是与设计对其的标准色盘
+注意：所有的颜色须从色盘中提取，不得擅自添加颜色。若设计师给出的UI稿中带有色盘中不存在的颜色，
+请与王坤联系并确认。
+***************************************************************************** */
+/*! **************************************
+        Naming Rule:
+          modules(BEM) + rule name
+
+        Example:
+          @main-container-bg
+*****************************************/.innerdocbody.adit-container ul.r-list-done li{color:var(--text-caption)}.import-mask{background:var(--bg-body);bottom:0;left:0;overflow:hidden;position:absolute;right:0;top:0;z-index:100}.import-mask .suite-body__overlay{height:100%}.import-mask .import-error__wrapper{margin-top:14px}.import-mask .import-error__title{color:var(--text-title);font-size:20px}.import-mask .import-error__body{max-width:460px;text-align:center}.import-mask .import-error__msg{color:var(--text-caption);font-size:16px;line-height:22px;margin-top:4px}.import-mask .import-error__btns-wrapper{align-items:center;display:flex;justify-content:center;margin-top:16px}.import-mask .import-error__btns-wrapper button:not(:first-child){margin-left:16px}.import-mask .import-error__button{color:var(--text-link-hover);cursor:pointer}.import-mask .import-waiting{color:var(--text-link-hover);margin-top:20px}.toast-wrap .import-tips-link{color:var(--text-link-hover);cursor:pointer}

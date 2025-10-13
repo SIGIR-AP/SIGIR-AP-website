@@ -1,0 +1,27 @@
+.ud__button.enable-offline-button{margin-top:20px}
+
+/*! *****************************************************************************
+                              这里是与设计对其的标准色盘
+注意：所有的颜色须从色盘中提取，不得擅自添加颜色。若设计师给出的UI稿中带有色盘中不存在的颜色，
+请与王坤联系并确认。
+***************************************************************************** */
+/*! **************************************
+        Naming Rule:
+          modules(BEM) + rule name
+
+        Example:
+          @main-container-bg
+*****************************************/.password-required-container{display:flex;justify-content:center;margin-bottom:12px;margin-top:20px;position:relative}.password-required-container .password-input{border:1px solid var(--line-border-card);border-radius:4px;box-sizing:border-box;font-size:14px;height:32px;line-height:32px;padding:0 8px;text-align:center;width:224px}.password-required-container .error-tips{color:var(--R500-FG);font-size:12px;line-height:20px;margin-top:8px;text-align:left;width:224px}.password-required-button{width:224px}.password-required-button span{flex-direction:row;justify-content:center}.unauthorized-enter-password{align-items:center;display:flex;flex-direction:column}
+
+/*! *****************************************************************************
+                              这里是与设计对其的标准色盘
+注意：所有的颜色须从色盘中提取，不得擅自添加颜色。若设计师给出的UI稿中带有色盘中不存在的颜色，
+请与王坤联系并确认。
+***************************************************************************** */
+/*! **************************************
+        Naming Rule:
+          modules(BEM) + rule name
+
+        Example:
+          @main-container-bg
+*****************************************/.innerdocbody.adit-container ul.r-list-done li{color:var(--text-caption)}.suite-body{background-color:var(--bg-body);height:100%;max-height:100%;position:relative}.opendoc .suite-body,.opendoc .suite-body .etherpad-container-wrapper{background:var(--opendoc-background,var(--bg-body))}.suite-body .suite-error__title{color:var(--text-title);font-size:18px;font-weight:500}.suite-body .suite-error__body{font-size:14px;font-weight:400;margin-top:17px;transition:box-shadow .25s ease-in-out}.suite-body.opendoc-border-radius .suite-body{background-color:var(--opendoc-border-radius-color,var(--bg-body))}.suite-body.opendoc-border-radius .bear-web-x-container{background-color:var(--bg-body);border-radius:8px}.suite-body.need-overflow-hidden-suite-body{overflow:hidden}.opendoc-hide-scrollbar .bear-web-x-container::-webkit-scrollbar,.opendoc-hide-scrollbar .etherpad-container-wrapper::-webkit-scrollbar{width:0}
