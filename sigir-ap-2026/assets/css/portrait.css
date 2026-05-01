@@ -1,0 +1,50 @@
+/*portrait
+------------------------------------*/
+.portrait {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:200px;
+  height:400px;
+  box-shadow:6px 15px 20px rgba(0,0,0,
+  .07);
+  margin:20px;
+  color:#000;
+  transition:box-shadow 
+  .4s ease
+}
+.portrait:hover {
+  box-shadow:6px 15px 20px rgba(0,0,0,
+  .15)}
+  .portrait:hover 
+  .portrait_image img{
+  transform:scale(1
+  .05)}
+  .portrait 
+  .portrait_image{
+  width:100%;
+  height:320px;
+  margin:0;
+  overflow:hidden
+}
+.portrait .portrait_image img {
+  width:100%;
+  height:100%;
+  -o-object-fit:cover;
+  object-fit:cover;
+  transform:scale(1.0);
+  transition:transform 
+  .3s ease
+}
+.portrait .portrait_name{
+  text-transform:none;
+  font-size:2.2rem;
+  margin:20px 20px 10px;
+  text-align:center
+}
+.portrait .portrait_affiliation{
+  text-transform:none;
+  color:gray;
+  margin:10px 20px 20px;
+  text-align:center
+}
