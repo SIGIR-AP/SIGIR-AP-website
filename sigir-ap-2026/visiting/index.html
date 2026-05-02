@@ -151,7 +151,7 @@
                         <li><a href="../venue/index.html">Venue</a></li>
                         <li><a href="../venue/hotel_reservation.html">Hotel Reservation</a></li>
                         <li><a href="../visa-information/index.html">VISA Information</a></li>
-                        <li><a href="../visiting/index.html">Visiting Xi'an</a></li>
+                        <li><a href="../visiting/index.html">Visiting Singapore</a></li>
                         <li><a href="../travel-grants/index.html">Student Travel Awards</a></li>
                         <li><a href="../registration/index.html">Registration</a></li>
                         <li><a href="../privacy/index.html">Privacy Policy</a></li>
@@ -178,7 +178,7 @@
                         <li><a href="../Queensland Satellite/index.html">Queensland Satellite</a></li>
                         <!-- <li><a href="../venue/index.html">Venue</a></li>
                         <li><a href="../visa-information/index.html">VISA Information</a></li>
-                        <li><a href="../visiting">Visiting Xi'an</a></li> -->
+                        <li><a href="../visiting">Visiting Singapore</a></li> -->
                     </ul>
                 </li>
                 <li class=""><a href="../important-dates/index.html" class="">Important Dates</a></li>
@@ -198,7 +198,7 @@
                         <li class=""><a href="../organizers/contact.html" class="">Contact Us</a></li>
                         <!-- <li><a href="../venue/index.html">Venue</a></li>
                         <li><a href="../visa-information/index.html">VISA Information</a></li>
-                        <li><a href="../visiting">Visiting Xi'an</a></li> -->
+                        <li><a href="../visiting">Visiting Singapore</a></li> -->
                     </ul>
                 </li>
                 
@@ -225,15 +225,15 @@
         <!--=== End Header ===-->
         <script type="text/javascript">
     //Get Banner image by random
-    var images = ['xian_1.jpeg', 'xian_2.jpeg', 'xian_4.jpeg', 'xian_8.jpg', 'xian_10.jpg', 'xidian_1.jpg', 'xidian_2.jpg', 'xidian_5.jpg'];
+    var images = ['sg_1.jpg', 'sg_2.jpg', 'sg_3.jpg', 'sg_4.jpg', 'sg_5.jpg'];
 var randomIndex = Math.floor(Math.random() * images.length);
 var selectedImage = images[randomIndex];
 
-document.write('<div class="interactive-slider-v2" style="background-image:url(\'../assets/img/main-banners/' + selectedImage + '\')">');
+document.write('<div class="interactive-slider-v2" style="background:url(\'../assets/img/main-banners/' + selectedImage + '\') no-repeat center center;background-size:cover">');
 </script>
 
         <div class="container">
-            <h1 class="animated fadeInUp">Visiting Xi'an</h1>
+            <h1 class="animated fadeInUp">Visiting Singapore</h1>
         </div>
     </div>    
       
@@ -242,253 +242,8 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
             <div class="news-v3 margin-bottom-30">
                 <!-- Contents goes here -->
                 <div class="news-v3-in">
-                <p>Xi'an, known as the capital of 13 dynasties, is one of China's Four Great Ancient Capitals with a rich history spanning over 3,000 years. The city is home to numerous famous historical landmarks, including the world-renowned Terracotta Army, the well-preserved ancient city wall, and iconic pagodas such as the Big and Small Wild Goose Pagodas. Beyond its historical significance, Xi'an is also celebrated for its diverse and flavorful local cuisine, particularly the vibrant street food found in the Muslim Quarter, which reflects a unique blend of Chinese and Islamic cultures. Its deep cultural heritage, ancient sites, and delicious food make Xi'an a must-visit destination for history lovers and food enthusiasts alike.</p>
-                <div class="video-container">
-                    <video 
-                      id="lazy-video"
-                      width="640" 
-                      height="360" 
-                      poster="../assets/img/visiting/video_poster.png"
-                      preload="none"
-                      playsinline
-                    >
-                      Your browser does not support HTML5 video.
-                    </video>
-                    
-                    <button id="playTrigger" class="play-button">▶ Play</button>
-                    
-                    <!-- 添加自定义控制条 -->
-                    <div class="custom-controls">
-                      <button id="playPauseBtn" class="control-btn">❚❚</button>
-                      <input id="progressBar" type="range" min="0" max="100" value="0" class="progress">
-                      <button id="fullscreenBtn" class="control-btn">⛶</button>
+                        <p class="text-center" style="padding: 80px 20px; font-size: 18px;">Coming soon.</p>
                     </div>
-                  </div>
-                  
-                  <script>
-                  document.addEventListener('DOMContentLoaded', function() {
-                    const video = document.getElementById('lazy-video');
-                    const playBtn = document.getElementById('playTrigger');
-                    const playPauseBtn = document.getElementById('playPauseBtn');
-                    const progressBar = document.getElementById('progressBar');
-                    const fullscreenBtn = document.getElementById('fullscreenBtn');
-                    
-                    // 点击播放按钮时加载并播放视频
-                    playBtn.addEventListener('click', function() {
-                      // 加载视频源（如果未加载）
-                      if (!video.querySelector('source')) {
-                        const source = document.createElement('source');
-                        source.src = video.getAttribute('data-src') || '../assets/img/visiting/ai-xian-small.mp4';
-                        source.type = 'video/mp4';
-                        video.appendChild(source);
-                        video.load();
-                      }
-                      
-                      // 播放视频
-                      video.play().catch(e => console.error('Fail:', e));
-                      
-                      // 隐藏播放按钮
-                      playBtn.style.display = 'none';
-                      
-                      // 显示控制条
-                      document.querySelector('.custom-controls').style.display = 'flex';
-                    });
-                    
-                    // 播放/暂停切换
-                    playPauseBtn.addEventListener('click', function() {
-                      if (video.paused) {
-                        video.play();
-                      } else {
-                        video.pause();
-                      }
-                    });
-                    
-                    // 更新播放/暂停按钮状态
-                    video.addEventListener('play', () => {
-                      playPauseBtn.textContent = '❚❚'; // 暂停图标
-                    });
-                    
-                    video.addEventListener('pause', () => {
-                      playPauseBtn.textContent = '▶'; // 播放图标
-                    });
-                    
-                    // 更新进度条
-                    video.addEventListener('timeupdate', () => {
-                      const percent = (video.currentTime / video.duration) * 100;
-                      progressBar.value = percent;
-                    });
-                    
-                    // 跳转视频进度
-                    progressBar.addEventListener('input', () => {
-                      const time = (progressBar.value / 100) * video.duration;
-                      video.currentTime = time;
-                    });
-                    
-                    // 全屏功能
-                    fullscreenBtn.addEventListener('click', () => {
-                      if (video.requestFullscreen) {
-                        video.requestFullscreen();
-                      } else if (video.webkitRequestFullscreen) {
-                        video.webkitRequestFullscreen();
-                      } else if (video.msRequestFullscreen) {
-                        video.msRequestFullscreen();
-                      }
-                    });
-                    
-                    // 当视频结束时显示播放按钮
-                    video.addEventListener('ended', () => {
-                      playBtn.style.display = 'block';
-                    });
-                  });
-                  </script>
-                  
-                  <style>
-                  .video-container {
-                    position: relative;
-                    width: 640px;
-                    margin: 0 auto;
-                    background: #000;
-                  }
-                  
-                  .play-button {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    padding: 12px 24px;
-                    background: rgba(0,0,0,0.7);
-                    color: white;
-                    border: 2px solid white;
-                    border-radius: 30px;
-                    cursor: pointer;
-                    font-size: 1.2em;
-                    z-index: 10;
-                  }
-                  
-                  .custom-controls {
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    background: rgba(0,0,0,0.7);
-                    padding: 10px;
-                    display: none; /* 默认隐藏，播放时显示 */
-                    align-items: center;
-                    z-index: 10;
-                  }
-                  
-                  .progress {
-                    flex-grow: 1;
-                    margin: 0 15px;
-                    height: 5px;
-                    border-radius: 3px;
-                    background: #555;
-                    -webkit-appearance: none;
-                  }
-                  
-                  .progress::-webkit-slider-thumb {
-                    -webkit-appearance: none;
-                    width: 15px;
-                    height: 15px;
-                    border-radius: 50%;
-                    background: #fff;
-                    cursor: pointer;
-                  }
-                  
-                  .control-btn {
-                    background: none;
-                    border: none;
-                    color: white;
-                    font-size: 1.2em;
-                    cursor: pointer;
-                    padding: 5px 10px;
-                  }
-                  
-                  video:playing + .play-button {
-                    display: none;
-                  }
-                  </style>
-                <h2><strong>Attractions</strong></h2>
-                Xi'an is a renowned historical and cultural city in China, located in the central part of Shaanxi Province. It served as the capital for thirteen ancient Chinese dynasties, including the well-known Qin, Han, and Tang dynasties. As the starting point of the Silk Road, Xi'an was once one of the most prosperous cities in the world and is home to a wealth of historical relics.
-                <p>
-                    1. <strong>Terracotta Warriors Museum</strong>: Located in Lintong District of Xi'an, the Museum of the Terracotta Warriors and Horses is one of the most significant archaeological discoveries of the 20th century and is often referred to as the “Eighth Wonder of the World.” These life-sized clay soldiers, horses, and chariots were part of the mausoleum complex of Qin Shi Huang, the first emperor of China, built over 2,000 years ago. They vividly reflect the military might and artistic sophistication of the Qin Dynasty. The site was inscribed as a UNESCO World Cultural Heritage Site in 1987 and is among China's earliest National 5A Tourist Attractions.
-                    <img class="img-responsive" src="../assets/img/visiting/Terracotta Warriors Museum.png" style="margin-top: 2%;">
-                    <br>
-                    2. <strong>Giant Wild Goose Pagoda</strong>: Located in Xi'an's Yanta District, the Giant Wild Goose Pagoda was originally built in 652 AD during the Tang Dynasty by the famous monk Xuanzang. It was constructed to house Buddhist scriptures, relics, and statues brought back from his pilgrimage to India. This seven-story brick pagoda stands as a classic example of Tang Dynasty Buddhist architecture and remains one of Xi'an's most iconic landmarks. Recognized as a National Key Cultural Heritage Site and a National 5A Tourist Attraction, the pagoda is a testament to Xi'an's historical and religious significance.
-                    <img class="img-responsive" src="../assets/img/visiting/Giant Wild Goose Pagoda.png" style="margin-top: 2%;">
-                    <br>
-                    3. <strong>Tang Paradise</strong>: Situated adjacent to the Giant Wild Goose Pagoda, Tang Paradise is a large cultural theme park that recreates the splendor of the Tang Dynasty. Featuring traditional palace-style buildings, landscaped gardens, music fountains, and scenic lakes, the park offers an immersive experience into Tang-era culture. Highlights include the evening performance “Dream Back to the Tang Dynasty,” which combines dance, music, and light shows. As a National 5A Tourist Attraction, Tang Paradise blends historical aesthetics with modern entertainment, making it a popular destination for visitors of all ages.
-                    <img class="img-responsive" src="../assets/img/visiting/Tang Paradise.webp" style="margin-top: 2%;">
-                    <br>
-                    4. <strong>The Grand Tang Mall</strong>: The Grand Tang Mall, a dazzling pedestrian street at the foot of Xi'an's Giant Wild Goose Pagoda, offers an immersive journey into China's Tang Dynasty (618-907 AD). This free-attraction masterpiece blends golden-lit Tang architecture with cutting-edge light shows, where visitors can watch viral street performances like the "Dumpling Girl" swaying in traditional Hanfu, sample Shaanxi snacks from night market stalls, and admire Silk Road-inspired art installations. Crowned as China's Top Nighttime Destination, the mall transforms at dusk into a luminous wonderland with interactive projections of Tang poetry and seasonal light festivals, while daytime visitors can explore boutique shops selling replica Tang artifacts. Easily combined with the adjacent Giant Wild Goose Pagoda, this open-air "museum" perfectly captures Xi'an's legacy as the ancient Silk Road's starting point and Tang capital.
-                    <img class="img-responsive" src="../assets/img/visiting/The Grand Tang Mall.png" style="margin-top: 2%;">
-                    <br>
-                    5. <strong>Xi'an City Wall</strong>: Xi’an’s City Wall is the most well-preserved and largest ancient city wall in China. Built during the early Ming Dynasty (14th century), it stretches 13.74 kilometers in a rectangular loop around the city center. The structure includes four main gates, watchtowers, corner towers, and a surrounding moat. Its wide top allows for walking and cycling, offering panoramic views of the city and insights into ancient Chinese defense systems. It is recognized as both a National 5A Tourist Attraction and a National Key Cultural Heritage Site, and it is also included on China’s tentative list for World Cultural Heritage.
-                    <img class="img-responsive" src="../assets/img/visiting/Xi'an City Wall.png" style="margin-top: 2%;">
-                    <br>
-                    6. <strong>Huaqing Palace</strong>: Located at the foot of Mount Li in Lintong District, Huaqing Palace has served as an imperial hot spring retreat since the Zhou, Qin, Han, and Tang Dynasties. It is best known for the romantic legend of Emperor Xuanzong and his beloved concubine Yang Guifei during the Tang Dynasty. Visitors can see preserved relics such as the Lotus Pool and Star Pool bathing sites. The palace is also historically significant as the site of the 1936 Xi’an Incident, with a memorial museum on-site. Today, it is a National 5A Tourist Attraction, and the large-scale outdoor performance The Song of Everlasting Sorrow dramatizes the emperor and concubine’s love story with music, dance, and light effects.
-                    <img class="img-responsive" src="../assets/img/visiting/Huaqing Palace.png" style="margin-top: 2%;">
-                    <br>
-                    7. <strong>Shanxi History Museum</strong>: Situated in the Xiaozhai area of Xi’an, the Shanxi History Museum is one of China's first national-level museums. It houses over 370,000 artifacts covering the region’s history from prehistoric times through the Qing Dynasty. The museum is renowned for its collections from the Zhou, Qin, Han, and Tang dynasties, including Tang sancai ceramics, bronzeware, gold and silver items, murals, and Silk Road artifacts. It serves as an essential gateway to understanding the rich historical and cultural heritage of the Guanzhong region. It is a National AAAA Tourist Attraction and a National Key Cultural Heritage Site.
-                    <img class="img-responsive" src="../assets/img/visiting/Shanxi History Museum.png" style="margin-top: 2%;">
-                    <br>
-                    8. <strong>Bell Tower & Drum Tower</strong>: The Bell Tower was built in 1384 during the Ming Dynasty and marks the geographical center of ancient Xi’an. The nearby Drum Tower was constructed in 1380 and originally served for timekeeping by beating drums at night. Both towers are striking examples of traditional Chinese wooden architecture and are beautifully lit in the evening. The area between the two towers leads to the Muslim Quarter, a vibrant food street known for its local snacks. These landmarks are National Key Cultural Heritage Sites and prominent symbols of the city.
-                    <img class="img-responsive" src="../assets/img/visiting/Bell Tower & Drum Tower.png" style="margin-top: 2%;">
-                    <br>
-                    9. <strong>Daming Palace National Heritage Park</strong>: Once the political and cultural center of the Tang Dynasty, Daming Palace was the grandest imperial complex of its time, known as the “Palace of a Thousand Palaces.” Located in today’s Xincheng District, the original palace covered 3.2 square kilometers. The site has been transformed into a national archaeological park featuring palace ruins, immersive museums, and digital exhibitions. It is a National Key Cultural Heritage Site and part of the UNESCO World Heritage Site “Silk Roads: the Routes Network of Chang'an-Tianshan Corridor.”
-                    <img class="img-responsive" src="../assets/img/visiting/Daming Palace National Heritage Park.png" style="margin-top: 2%;">
-                    <br>
-                    10. <strong>Forest of Stone Steles Museum</strong>: Established in 1087 during the Northern Song Dynasty, the Forest of Stone Steles Museum is housed in the former Confucian Temple of Xi’an. It contains over 3,000 stone steles, epitaphs, and calligraphic works ranging from the Han to the Qing dynasties. Highlights include the Kaicheng Stone Classics, Xiaojing Stele, and Yan Zhenqing’s Memorial to His Nephew, making it a paradise for calligraphy and history enthusiasts. It is the largest museum of stone inscriptions in China and a National Key Cultural Heritage Site.
-                    <img class="img-responsive" src="../assets/img/visiting/Forest of Stone Steles Museum.png" style="margin-top: 2%;">
-                </p>
-
-                <h2><strong>Gourmet Paradise</strong></h2>
-
-                <p>
-                    Popular as a gourmet paradise, Xi'an offers cuisines from all over the world as well as the following iconic local specialties:
-                    <br>
-                    1. <strong>Roujiamo</strong>: Often referred to as the “Chinese hamburger,” Roujiamo is one of the oldest street foods in China, with origins dating back to the Warring States Period (475–221 BC). It consists of slow-braised pork (sometimes beef or lamb) stuffed inside a baked flatbread known as mo. The meat is tender and flavorful, and the bread is crispy on the outside and soft inside. This simple yet satisfying snack remains a staple of Shaanxi cuisine.
-                    <img class="img-responsive" src="../assets/img/visiting/Roujiamo.jpg" style="margin-top: 2%;">
-                    <br>
-                    2. <strong>Liangpi</strong>: Liangpi, or cold skin noodles, is a classic dish from the Qin and Han Dynasties (221 BC–220 AD). Made from wheat or rice flour through a washing and steaming process, the noodles are served chilled with cucumber, bean sprouts, gluten strips, and seasoned with vinegar, garlic water, and chili oil. Its chewy texture and refreshing, tangy-spicy flavor make it a popular street food, especially in the summer.
-                    <img class="img-responsive" src="../assets/img/visiting/Liangpi.webp" style="margin-top: 2%;">
-                    <br>
-                    3. <strong>Yangrou Paomo</strong>: A signature dish of Xi’an, Yangrou Paomo (lamb soup with crumbled flatbread) has roots in the Western Zhou Dynasty (1046–771 BC). It features hand-torn pieces of wheat flatbread soaked in a rich lamb broth simmered with bones, served with vermicelli, black fungus, and cilantro. The bread absorbs the broth’s flavor without becoming mushy, and the lamb is tender and aromatic. The tradition of tearing the bread by hand before cooking reflects the city's slow food culture.
-                    <img class="img-responsive" src="../assets/img/visiting/Yangrou Paomo.png" style="margin-top: 2%;">
-                    <br>
-                    4. <strong>Youpo Mian (Oil-Splashed Noodles)</strong>: Originating in the Tang Dynasty (618–907 AD), Youpo Mian is a classic Shaanxi noodle dish. Wide hand-pulled noodles are topped with chili flakes, garlic, and scallions, then finished with a splash of hot oil that releases their aroma. The noodles are firm and springy, with bold yet balanced seasoning, making the dish both simple and flavorful.
-                    <img class="img-responsive" src="../assets/img/visiting/Youpo Mian (Oil-Splashed Noodles).jpg" style="margin-top: 2%;">
-                    <br>
-                    5. <strong>Biangbiang Mian (Biang Noodles)</strong>: A signature dish from Shanxi province, Biangbiang Mian is named after the distinctive "biang" character, one of the most complex in the Chinese language. These noodles are exceptionally wide and thick, often described as "belt-like." Traditionally hand-pulled, they are served with a savory topping of chili oil, garlic, vinegar, soy sauce, and vegetables such as bok choy or bean sprouts. Sometimes, stewed meat or eggs are added. Known for their chewy texture and rich, aromatic sauce, Biangbiang Mian embodies the hearty and robust flavors of northwestern Chinese cuisine.
-                    <img class="img-responsive" src="../assets/img/visiting/Biangbiang Mian (Biang Noodles).png" style="margin-top: 2%;">
-                </p>
-
-                <h2><strong>Weather</strong></h2>
-
-                <p>
-                    Xi'an has a warm temperate monsoon climate, with annual temperatures averaging 12-14°C. In December, daytime highs are 2-6°C, while nighttime lows often drop to -4°C to 0°C (sometimes lower). The large temperature difference and increasing cold signal winter's arrival.
-                </p>
-                
-                <h2><strong>E-Payment in Xi'an</strong></h2>
-                <p>
-                    When embarking on your journey through the vibrant and bustling streets of Xi'an, there's one piece of advice that can significantly enhance your travel experience: embrace the convenience of e-payment methods. In a city where ancient traditions seamlessly blend with modern innovations, opting for electronic payments is not just a practical choice but a gateway to a smoother, more enjoyable exploration of this dynamic metropolis. Alipay is one of the many e-payment options widely used in China.
-                    <br/>
-                    Please find the following instruction for setting up Alipay:
-                    <img class="img-responsive" src="../assets/img/visiting/alipay.jpeg" style="margin-top: 2%;width:300px;">
-                </p>
-
-                <h2><strong>Videos aboout Xi'an</strong></h2>
-                
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=62ImL810YaI">Xi'an China Travel Guide: 17 BEST Things To Do In Xi'an Shaanxi.</a> This video introduces the top attractions in Xi’an, including historic sites like the Terracotta Army, City Wall, and ancient pagodas. It also highlights cultural spots such as the Muslim Quarter, museums, and traditional streets.
-                    </li>
-                    <li>
-                        <a href="https://www.bilibili.com/video/BV1Vs4y1R7Wk/?share_source=copy_web&vd_source=a7ffcc84467f0bf70c684d3aece63c93">Ancient Capital of 13 Dynasties, World-Renowned Historical and Cultural City.</a> This video introduces the history, attractions, and local cuisine in Xi'an.
-                    </li>
-                
-            
-
-                </div>
             </div>
         </div>
     </div>
@@ -508,9 +263,6 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
                        </div>
                        <div class="col-md-3 col-xs-3">
                            <img class="img-responsive" src="../assets/img/logos/sigir.png" style="width: 80%; margin-top: 10%; margin-left: 10%;">
-                       </div>
-                        <div class="col-md-3 col-xs-3">
-                           <img class="img-responsive" src="../assets/img/logos/xidian.png" style="width: 80%; margin-top: 0%; margin-left: 10%;">
                        </div>
                         <div class="col-md-3 col-xs-3">
                            <img class="img-responsive" src="../assets/img/logos/queensland2.jpeg" style="width: 130%; margin-top: 0%; margin-left: 10%; margin-bottom: 20%;">

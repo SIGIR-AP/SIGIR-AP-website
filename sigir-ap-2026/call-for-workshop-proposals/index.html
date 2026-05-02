@@ -135,7 +135,7 @@
                         <li><a href="../venue/index.html">Venue</a></li>
                         <li><a href="../venue/hotel_reservation.html">Hotel Reservation</a></li>
                         <li><a href="../visa-information/index.html">VISA Information</a></li>
-                        <li><a href="../visiting/index.html">Visiting Xi'an</a></li>
+                        <li><a href="../visiting/index.html">Visiting Singapore</a></li>
                         <li><a href="../travel-grants/index.html">Student Travel Awards</a></li>
                         <li><a href="../registration/index.html">Registration</a></li>
                         <li><a href="../privacy/index.html">Privacy Policy</a></li>
@@ -162,7 +162,7 @@
                         <li><a href="../Queensland Satellite/index.html">Queensland Satellite</a></li>
                         <!-- <li><a href="../venue/index.html">Venue</a></li>
                         <li><a href="../visa-information/index.html">VISA Information</a></li>
-                        <li><a href="../visiting">Visiting Xi'an</a></li> -->
+                        <li><a href="../visiting">Visiting Singapore</a></li> -->
                     </ul>
                 </li>
                 <li class=""><a href="../important-dates/index.html" class="">Important Dates</a></li>
@@ -182,7 +182,7 @@
                         <li class=""><a href="../organizers/contact.html" class="">Contact Us</a></li>
                         <!-- <li><a href="../venue/index.html">Venue</a></li>
                         <li><a href="../visa-information/index.html">VISA Information</a></li>
-                        <li><a href="../visiting">Visiting Xi'an</a></li> -->
+                        <li><a href="../visiting">Visiting Singapore</a></li> -->
                     </ul>
                 </li>
                 
@@ -207,14 +207,19 @@
             <!-- End Navbar -->
         </div>
         <!--=== End Header ===-->
+        <div id="sigir-ap-2026-hero-workshops" class="interactive-slider-v2">
         <script type="text/javascript">
-    //Get Banner image by random
-    var images = ['xian_1.jpeg', 'xian_2.jpeg', 'xian_4.jpeg', 'xian_8.jpg', 'xian_10.jpg', 'xidian_1.jpg', 'xidian_2.jpg', 'xidian_5.jpg'];
-var randomIndex = Math.floor(Math.random() * images.length);
-var selectedImage = images[randomIndex];
-
-document.write('<div class="interactive-slider-v2" style="background-image:url(\'../assets/img/main-banners/' + selectedImage + '\')">');
-</script>
+        (function () {
+            var images = ['sg_1.jpg', 'sg_2.jpg', 'sg_3.jpg', 'sg_4.jpg', 'sg_5.jpg'];
+            var el = document.getElementById('sigir-ap-2026-hero-workshops');
+            if (!el) return;
+            var selectedImage = images[Math.floor(Math.random() * images.length)];
+            el.style.backgroundImage = "url('../assets/img/main-banners/" + selectedImage + "?v=202605')";
+            el.style.backgroundRepeat = 'no-repeat';
+            el.style.backgroundPosition = 'center center';
+            el.style.backgroundSize = 'cover';
+        })();
+        </script>
 
         <div class="container">
             <h1 class="animated fadeInUp">Call for Workshop Proposals</h1>
@@ -227,7 +232,7 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
                     <!-- Contents goes here -->
                     <div class="news-v3-in">
                         <p>
-                            The annual SIGIR-AP conference is an annual ACM-sponsored international forum that promotes and disseminates information retrieval research and development within the Asia-Pacific region. The 3rd ACM SIGIR-AP conference (SIGIR-AP 2025) will be held in Xi'an, China, from December 7th to 10th, 2025. SIGIR-AP 2025 workshops will provide a platform for presenting novel ideas and emerging areas in IR, fostering a more focused and engaging environment than the conference itself. Researchers and practitioners from all areas of IR are invited to submit workshop proposals. Workshops will be on-site and in person. All workshops will require at least one organizer to attend.
+                            The annual SIGIR-AP conference is an annual ACM-sponsored international forum that promotes and disseminates information retrieval research and development within the Asia-Pacific region. The 3rd ACM SIGIR-AP conference (SIGIR-AP 2025) will be held in Singapore, China, from December 7th to 10th, 2025. SIGIR-AP 2025 workshops will provide a platform for presenting novel ideas and emerging areas in IR, fostering a more focused and engaging environment than the conference itself. Researchers and practitioners from all areas of IR are invited to submit workshop proposals. Workshops will be on-site and in person. All workshops will require at least one organizer to attend.
                         </p>
 
                         <h2 class="margin-bottom-5"><strong>Important Dates for Workshop Proposals (TODO)</strong></h2>
@@ -303,9 +308,6 @@ document.write('<div class="interactive-slider-v2" style="background-image:url(\
                        </div>
                        <div class="col-md-3 col-xs-3">
                            <img class="img-responsive" src="../assets/img/logos/sigir.png" style="width: 80%; margin-top: 10%; margin-left: 10%;">
-                       </div>
-                        <div class="col-md-3 col-xs-3">
-                           <img class="img-responsive" src="../assets/img/logos/xidian.png" style="width: 80%; margin-top: 0%; margin-left: 10%;">
                        </div>
                         <div class="col-md-3 col-xs-3">
                            <img class="img-responsive" src="../assets/img/logos/queensland2.jpeg" style="width: 130%; margin-top: 0%; margin-left: 10%; margin-bottom: 20%;">
