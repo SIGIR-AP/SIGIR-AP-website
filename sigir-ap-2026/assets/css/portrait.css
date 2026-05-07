@@ -1,50 +1,82 @@
-/*portrait
+/* portrait — organizers cards
 ------------------------------------*/
 .portrait {
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  width:200px;
-  height:400px;
-  box-shadow:6px 15px 20px rgba(0,0,0,
-  .07);
-  margin:20px;
-  color:#000;
-  transition:box-shadow 
-  .4s ease
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  flex: 0 0 200px;
+  height: auto;
+  min-height: 360px;
+  box-shadow: 6px 15px 20px rgba(0, 0, 0, 0.07);
+  margin: 20px;
+  color: #000;
+  transition: box-shadow 0.4s ease;
 }
+
 .portrait:hover {
-  box-shadow:6px 15px 20px rgba(0,0,0,
-  .15)}
-  .portrait:hover 
-  .portrait_image img{
-  transform:scale(1
-  .05)}
-  .portrait 
-  .portrait_image{
-  width:100%;
-  height:320px;
-  margin:0;
-  overflow:hidden
+  box-shadow: 6px 15px 20px rgba(0, 0, 0, 0.15);
 }
-.portrait .portrait_image img {
-  width:100%;
-  height:100%;
-  -o-object-fit:cover;
-  object-fit:cover;
-  transform:scale(1.0);
-  transition:transform 
-  .3s ease
+
+.portrait:hover .portrait_image img {
+  transform: scale(1.05);
 }
-.portrait .portrait_name{
-  text-transform:none;
-  font-size:2.2rem;
-  margin:20px 20px 10px;
-  text-align:center
+
+/* Bootstrap normalize: figure { margin: 1em 40px } — 会撑破窄卡片，必须清零 */
+.portrait figure.portrait_image {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 180px;
+  height: 220px;
+  min-width: 180px;
+  min-height: 220px;
+  max-width: 180px;
+  max-height: 220px;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
-.portrait .portrait_affiliation{
-  text-transform:none;
-  color:gray;
-  margin:10px 20px 20px;
-  text-align:center
+
+/* 链接默认 inline，易导致图片高度按内容算；固定为块级裁切区 */
+.portrait figure.portrait_image > a {
+  display: block;
+  width: 180px;
+  height: 220px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.portrait figure.portrait_image img {
+  display: block;
+  width: 180px !important;
+  height: 220px !important;
+  max-width: none !important;
+  box-sizing: border-box;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center top;
+  object-position: center top;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.portrait .portrait_name {
+  text-transform: none;
+  font-size: 2.2rem;
+  margin: 20px 20px 10px;
+  text-align: center;
+}
+
+.portrait .portrait_affiliation {
+  text-transform: none;
+  color: gray;
+  margin: 10px 20px 20px;
+  text-align: center;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
