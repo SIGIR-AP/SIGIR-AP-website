@@ -223,7 +223,433 @@ document.write('<div class="interactive-slider-v2" style="background:url(\'../as
                 <div class="news-v3 margin-bottom-30">
                     <!-- Contents goes here -->
                    <div class="news-v3-in">
-                        <p class="text-center" style="padding: 80px 20px; font-size: 18px;">Coming soon.</p>
+                    <h2><strong>REGISTRATION FOR SIGIR-AP 2026 IS COMING SOON!</strong></h2>
+                    <p>
+                        SIGIR-AP 2026 is committed to fostering international collaboration and ensuring accessibility for participants from around the world.
+                        <br>Please note that at least one author of each accepted paper is required to register and present the paper at the conference. We allow one author to register and present multiple papers. Authors are not required to pay the full conference registration fee for each paper. Instead, they only need to pay the full conference registration fee for their first paper, plus an additional publication fee of USD 300 for each subsequent paper.
+                        <br>SIGIR-AP 2026 is a hybrid conference allowing all registrants to choose to attend the event virtually or in person. In-person presentations are more rewarding for both the presenter and the audience. We accordingly request that at least one author of each accepted paper make reasonable efforts to attend the conference in Singapore. If no author of a paper is able to attend in person, please make a remote presentation request to the Conference Chairs (<a href="mailto:gc2026@sigir-ap.org">gc2026@sigir-ap.org</a>), explaining the circumstances that apply. These requests will be considered on a case-by-case basis.
+                    </p>
+
+                    <h3><strong>REGISTRATION FEES</strong></h3>
+                    SIGIR-AP 2026 provides two types of registration, as listed below:
+                    <ul>
+                        <li><strong>Full Passport</strong>: Full access to all conference events and services, including tutorials and workshops.</li>
+                        <li><strong>Workshop/Tutorial only</strong>: A welcome reception ticket and access to workshops/tutorial on the first day of the conference (<strong>13 Dec 2026</strong>).</li>
+                    </ul>
+                    SIGIR-AP 2026 provides registration discounts depending on your status and registration date, as listed below:
+                    <ul>
+                        <li><strong>Early Bird</strong>: People who register before the early-bird deadline (<strong>10/11/2026 AoE</strong>) will receive this discount.</li>
+                        <li><strong>Online</strong>: Discounts apply if you plan to attend the conference virtually.</li>
+                        <li><strong>ACM Member</strong>: Valid ACM members who register for the conference will receive this discount. Please be sure to register using the email address associated with your ACM membership account to receive the member discount.</li>
+                        <li><strong>Student</strong>: Students who register for the conference will receive this discount. To get this discount, you are required to submit your scanned student ID card on the registration form.</li>
+                    </ul>
+                    The lists of registration fees are as follows.
+
+                    <style>
+                        .conference-table {
+                            width: 100%;
+                            border-collapse: collapse;
+                            margin: 25px 0;
+                            font-size: 15px;
+                            font-family: "Segoe UI", Arial, sans-serif;
+                            border-radius: 8px;
+                            overflow: hidden;
+                            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                        }
+
+                        .conference-table thead th {
+                            background-color: #f1f3f5;
+                            color: #333;
+                            font-weight: 600;
+                            text-align: left;
+                            padding: 14px;
+                            border-bottom: 2px solid #ddd;
+                            font-size: 15px;
+                        }
+
+                        .conference-table td {
+                            padding: 12px 16px;
+                            border-bottom: 1px solid #eee;
+                            vertical-align: middle;
+                        }
+
+                        .conference-table td[rowspan] {
+                            background-color: #f8f9fa;
+                            font-weight: 600;
+                            text-align: center;
+                            color: #444;
+                            width: 140px;
+                        }
+
+                        .conference-table tbody tr:nth-child(even) {
+                            background-color: #fcfcfc;
+                        }
+
+                        .conference-table tbody tr:hover {
+                            background-color: #f1f9ff;
+                        }
+
+                        .conference-table .price {
+                            font-weight: 500;
+                            color: #222;
+                            text-align: center;
+                            white-space: nowrap;
+                        }
+
+                        .extra-fee-table {
+                            width: 100%;
+                            border-collapse: separate;
+                            border-spacing: 0;
+                            margin: 30px 0;
+                            font-size: 16px;
+                            font-family: "Segoe UI", Arial, sans-serif;
+                            border: 1px solid #ddd;
+                            border-radius: 8px;
+                            overflow: hidden;
+                            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                        }
+
+                        .extra-fee-table thead th {
+                            background-color: #f5f5f5;
+                            color: #333;
+                            font-weight: 600;
+                            text-align: center;
+                            padding: 16px;
+                            border-bottom: 2px solid #ddd;
+                            font-size: 17px;
+                        }
+
+                        .extra-fee-table th:first-child,
+                        .extra-fee-table td:first-child:not(.price-cell) {
+                            font-weight: 600;
+                            text-align: center;
+                            background-color: #fafafa;
+                            width: 20%;
+                        }
+
+                        .extra-fee-table td:nth-child(2),
+                        .extra-fee-table td.price-cell {
+                            font-weight: normal;
+                            text-align: center;
+                            width: 15%;
+                        }
+
+                        .extra-fee-table th:nth-child(3),
+                        .extra-fee-table td:nth-child(3) {
+                            width: 65%;
+                        }
+
+                        .extra-fee-table .description-cell {
+                            vertical-align: middle;
+                            padding: 16px;
+                        }
+
+                        .extra-fee-table tbody tr:nth-child(even) td {
+                            background-color: #fcfcfc;
+                        }
+
+                        .extra-fee-table tbody tr:hover td {
+                            background-color: #f4faff;
+                        }
+
+                        .extra-fee-table .description-cell ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                        }
+
+                        .extra-fee-table .description-cell li {
+                            position: relative;
+                            padding-left: 22px;
+                            margin-bottom: 10px;
+                            line-height: 1.6;
+                        }
+
+                        .extra-fee-table .description-cell li:before {
+                            content: "•";
+                            color: #007BFF;
+                            font-size: 18px;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+
+                        .extra-fee-table .description-cell li:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .extra-fee-table td {
+                            padding: 14px;
+                            border-bottom: 1px solid #eee;
+                        }
+
+                        @media (max-width: 767px) {
+                            .registration-table-wrapper {
+                                overflow-x: auto;
+                            }
+
+                            .conference-table,
+                            .extra-fee-table {
+                                min-width: 760px;
+                            }
+                        }
+                    </style>
+
+                    <h4><strong>In Person</strong></h4>
+                    <div class="registration-table-wrapper">
+                        <table class="conference-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Early Bird (by 10/11/2026)</th>
+                                    <th>Regular Rate (by 25/11/2026)</th>
+                                    <th>Late Rate (by 12/12/2026)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="4">Full Conference</td>
+                                    <td>ACM Professional Member</td>
+                                    <td class="price">$780</td>
+                                    <td class="price">$900</td>
+                                    <td class="price">$1,020</td>
+                                </tr>
+                                <tr>
+                                    <td>Non-Member</td>
+                                    <td class="price">$900</td>
+                                    <td class="price">$1,020</td>
+                                    <td class="price">$1,140</td>
+                                </tr>
+                                <tr>
+                                    <td>ACM Student Member</td>
+                                    <td class="price">$510</td>
+                                    <td class="price">$590</td>
+                                    <td class="price">$670</td>
+                                </tr>
+                                <tr>
+                                    <td>Student Non-Member</td>
+                                    <td class="price">$590</td>
+                                    <td class="price">$670</td>
+                                    <td class="price">$750</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">Workshops Only</td>
+                                    <td>ACM Professional Member</td>
+                                    <td class="price">$240</td>
+                                    <td class="price">$280</td>
+                                    <td class="price">$320</td>
+                                </tr>
+                                <tr>
+                                    <td>Non-Member</td>
+                                    <td class="price">$280</td>
+                                    <td class="price">$320</td>
+                                    <td class="price">$360</td>
+                                </tr>
+                                <tr>
+                                    <td>ACM Student Member</td>
+                                    <td class="price">$160</td>
+                                    <td class="price">$200</td>
+                                    <td class="price">$240</td>
+                                </tr>
+                                <tr>
+                                    <td>Student Non-Member</td>
+                                    <td class="price">$200</td>
+                                    <td class="price">$240</td>
+                                    <td class="price">$280</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">Tutorials Only</td>
+                                    <td>ACM Professional Member</td>
+                                    <td class="price">$240</td>
+                                    <td class="price">$280</td>
+                                    <td class="price">$320</td>
+                                </tr>
+                                <tr>
+                                    <td>Non-Member</td>
+                                    <td class="price">$280</td>
+                                    <td class="price">$320</td>
+                                    <td class="price">$360</td>
+                                </tr>
+                                <tr>
+                                    <td>ACM Student Member</td>
+                                    <td class="price">$160</td>
+                                    <td class="price">$200</td>
+                                    <td class="price">$240</td>
+                                </tr>
+                                <tr>
+                                    <td>Student Non-Member</td>
+                                    <td class="price">$200</td>
+                                    <td class="price">$240</td>
+                                    <td class="price">$280</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4><strong>Online</strong></h4>
+                    <div class="registration-table-wrapper">
+                        <table class="conference-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Early Bird (by 10/11/2026)</th>
+                                    <th>Regular Rate (by 25/11/2026)</th>
+                                    <th>Late Rate (by 12/12/2026)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="4">Full Conference</td>
+                                    <td>ACM Professional Member</td>
+                                    <td class="price">$390</td>
+                                    <td class="price">$450</td>
+                                    <td class="price">$510</td>
+                                </tr>
+                                <tr>
+                                    <td>Non-Member</td>
+                                    <td class="price">$450</td>
+                                    <td class="price">$510</td>
+                                    <td class="price">$570</td>
+                                </tr>
+                                <tr>
+                                    <td>ACM Student Member</td>
+                                    <td class="price">$260</td>
+                                    <td class="price">$300</td>
+                                    <td class="price">$340</td>
+                                </tr>
+                                <tr>
+                                    <td>Student Non-Member</td>
+                                    <td class="price">$300</td>
+                                    <td class="price">$340</td>
+                                    <td class="price">$380</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">Workshops Only</td>
+                                    <td>ACM Professional Member</td>
+                                    <td class="price">$120</td>
+                                    <td class="price">$140</td>
+                                    <td class="price">$160</td>
+                                </tr>
+                                <tr>
+                                    <td>Non-Member</td>
+                                    <td class="price">$140</td>
+                                    <td class="price">$160</td>
+                                    <td class="price">$180</td>
+                                </tr>
+                                <tr>
+                                    <td>ACM Student Member</td>
+                                    <td class="price">$80</td>
+                                    <td class="price">$100</td>
+                                    <td class="price">$120</td>
+                                </tr>
+                                <tr>
+                                    <td>Student Non-Member</td>
+                                    <td class="price">$100</td>
+                                    <td class="price">$120</td>
+                                    <td class="price">$140</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">Tutorials Only</td>
+                                    <td>ACM Professional Member</td>
+                                    <td class="price">$120</td>
+                                    <td class="price">$140</td>
+                                    <td class="price">$160</td>
+                                </tr>
+                                <tr>
+                                    <td>Non-Member</td>
+                                    <td class="price">$140</td>
+                                    <td class="price">$160</td>
+                                    <td class="price">$180</td>
+                                </tr>
+                                <tr>
+                                    <td>ACM Student Member</td>
+                                    <td class="price">$80</td>
+                                    <td class="price">$100</td>
+                                    <td class="price">$120</td>
+                                </tr>
+                                <tr>
+                                    <td>Student Non-Member</td>
+                                    <td class="price">$100</td>
+                                    <td class="price">$120</td>
+                                    <td class="price">$140</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3><strong>EXTRA FEES</strong></h3>
+                    Several types of extra fees may apply to your registration, as listed below:
+                    <div class="registration-table-wrapper">
+                        <table class="extra-fee-table">
+                            <thead>
+                                <tr>
+                                    <th>Extra Fee Types</th>
+                                    <th>Rates</th>
+                                    <th>Descriptions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Additional Paper Publication Fee</td>
+                                    <td>$300 per additional paper</td>
+                                    <td class="description-cell">
+                                        <ul>
+                                            <li>Authors are not required to pay the full conference registration fee for each accepted paper. Instead, they only need to pay the full conference registration fee for their first paper, plus an additional publication fee of USD 300 for each subsequent paper, regardless of whether they attend in person or virtually.</li>
+                                            <li>This fee helps cover the costs associated with each accepted paper, including venue rental, session equipment, publication expenses, and other related costs.</li>
+                                            <li>Authors registering additional papers must provide the submission ID and paper title for each additional paper during the registration process.</li>
+                                            <li>Tutorials, workshop proposals, and papers presented in the workshops are exempt from the additional publication fee.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">Dinner Reception Ticket</td>
+                                    <td class="price-cell">$155 (Early)</td>
+                                    <td rowspan="3" class="description-cell">
+                                        <ul>
+                                            <li>One dinner reception ticket is included with one in-person registration. This purchase is for attendees who need to purchase a Dinner Reception Ticket for their Guest.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="price-cell">$175 (Regular)</td>
+                                </tr>
+                                <tr>
+                                    <td class="price-cell">$195 (Late)</td>
+                                </tr>
+                                <tr>
+                                    <td>Carbon Purchase (Optional)</td>
+                                    <td>$25</td>
+                                    <td class="description-cell">
+                                        <ul>
+                                            <li>As a part of SIGIR-AP's effort to be carbon neutral, attendees are encouraged to purchase carbon credits for their attendance of the conference.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3><strong>REGISTRATION PORTAL</strong></h3>
+                    The registration portal will be available soon. Please note that:
+                    <ul>
+                        <li><strong>ACM Membership:</strong> ACM members, please ensure that you register using the email address associated with your ACM membership account to receive the member discount.</li>
+                        <li><strong>VISA Support Letter:</strong> You can obtain an invitation letter for your visa application from the conference organizers by contacting <a href="mailto:sigirap2026@easychair.org">sigirap2026@easychair.org</a>, providing the following information: your passport number, name as it appears on your passport, gender, date of birth, institution, the IDs and titles of your accepted paper.</li>
+                        <li><strong>Registration Confirmation:</strong> You will receive a confirmation email upon successful payment.</li>
+                        <li><strong>Invoice:</strong> An electronic invoice for the registration fee will be emailed to you within 5 business days after the event.</li>
+                    </ul>
+
+                    <h3><strong>CANCELLATION POLICY</strong></h3>
+                    No refunds except in the case of visa denial. If your visa is denied, you will be refunded the full registration amount less a $50 processing fee.
+
+                    <h3><strong>SIGIR-AP 2026 REGISTRATION CHAIRS</strong></h3>
+                    Chenliang Li
+                    <br>Wuhan University, China
+                    <br><br>Wei Zhang
+                    <br>Adelaide University, Australia
+                    <br><br>Email: <a href="mailto:registration2026@sigir-ap.org">registration2026@sigir-ap.org</a>
+                    <br>If you have any inquiries, please do not hesitate to contact us.
                     </div>
                 </div>
             </div>
