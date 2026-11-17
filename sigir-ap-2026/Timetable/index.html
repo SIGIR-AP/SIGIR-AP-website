@@ -145,8 +145,9 @@
     .program-tag {
         display: inline-block;
         padding: .1rem .45rem;
+        border: 1px solid #bcc9d6;
         border-radius: 3px;
-        background: #ece9e1;
+        background: #dce5ef;
         color: #3a4050;
         font-size: 11px;
         letter-spacing: .03em;
@@ -155,21 +156,26 @@
     }
 
     .program-tag.id {
+        border-color: #cec0ad;
+        background: #e6ded2;
         font-variant-numeric: tabular-nums;
         text-transform: none;
     }
 
     .program-tag.industry {
+        border-color: #6f2417;
         background: #8a2f1f;
         color: #fff;
     }
 
     .program-tag.rr {
-        background: #e9dfcf;
+        border-color: #cfb78f;
+        background: #e9d5b7;
     }
 
     .program-tag.student {
-        background: #dde8f2;
+        border-color: #b6ccdf;
+        background: #d2e3f2;
     }
 
     .program-tag.duration {
@@ -188,6 +194,23 @@
 
     .full-program-table .waffle td.s4 > br + span[style*="font-size:8pt"] {
         font-size: 12px !important;
+    }
+
+    .full-program-table .waffle tbody tr.program-row-white > td {
+        background-color: #ffffff !important;
+    }
+
+    .full-program-table .waffle tbody tr.program-row-gray > td {
+        background-color: #f2f2f2 !important;
+    }
+
+    .full-program-table .waffle tbody tr.program-row-white > td.s12,
+    .full-program-table .waffle tbody tr.program-row-gray > td.s12 {
+        background-color: #d7e4f5 !important;
+    }
+
+    .full-program-table .waffle tbody tr.program-day-row > td {
+        background-color: #fce5cd !important;
     }
 </style>
 </head>
@@ -564,6 +587,24 @@ document.write('<div class="interactive-slider-v2" style="background:url(\'../as
 <script type="text/javascript">
     jQuery(document).ready(function() {
       	App.init();
+
+        var stripeIndex = 0;
+        jQuery('.full-program-table tbody > tr').each(function() {
+            var row = jQuery(this);
+
+            if (!row.children('td').length) {
+                return;
+            }
+
+            if (row.children('td.s3').length) {
+                row.addClass('program-day-row');
+                stripeIndex = 0;
+                return;
+            }
+
+            row.addClass(stripeIndex % 2 === 0 ? 'program-row-white' : 'program-row-gray');
+            stripeIndex += 1;
+        });
 //         App.initParallaxBg();
 //         FancyBox.initFancybox();
 //         OwlCarousel.initOwlCarousel();
