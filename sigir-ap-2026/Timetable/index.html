@@ -97,6 +97,8 @@
         width: 1210px;
         min-width: 1210px;
         table-layout: fixed;
+        outline: 1px solid #cfd3d7;
+        outline-offset: -1px;
     }
 
     .full-program-table .waffle td {
@@ -196,16 +198,15 @@
         font-size: 12px !important;
     }
 
-    .full-program-table .waffle tbody tr.program-row-white > td {
+    .full-program-table .waffle tbody td.program-cell-white {
         background-color: #ffffff !important;
     }
 
-    .full-program-table .waffle tbody tr.program-row-gray > td {
+    .full-program-table .waffle tbody td.program-cell-gray {
         background-color: #f2f2f2 !important;
     }
 
-    .full-program-table .waffle tbody tr.program-row-white > td.s12,
-    .full-program-table .waffle tbody tr.program-row-gray > td.s12 {
+    .full-program-table .waffle tbody td.program-session-cell {
         background-color: #d7e4f5 !important;
     }
 
@@ -588,22 +589,78 @@ document.write('<div class="interactive-slider-v2" style="background:url(\'../as
     jQuery(document).ready(function() {
       	App.init();
 
-        var stripeIndex = 0;
+        var stripeIndexes = {
+            time: 0,
+            room: 0,
+            type: 0
+        };
+        var activeTimeColor = 'white';
+        var mainStripeOffset = 0;
+
+        function applyCellColor(cell, color) {
+            cell.addClass(color === 'white' ? 'program-cell-white' : 'program-cell-gray');
+        }
+
+        function applyColumnStripe(cell, column) {
+            var color = stripeIndexes[column] % 2 === 0 ? 'white' : 'gray';
+            applyCellColor(cell, color);
+            stripeIndexes[column] += 1;
+            return color;
+        }
+
         jQuery('.full-program-table tbody > tr').each(function() {
             var row = jQuery(this);
+            var cells = row.children('td');
 
-            if (!row.children('td').length) {
+            if (!cells.length) {
                 return;
             }
 
-            if (row.children('td.s3').length) {
+            if (cells.filter('.s3').length) {
                 row.addClass('program-day-row');
-                stripeIndex = 0;
+                stripeIndexes.time = 0;
+                stripeIndexes.room = 0;
+                stripeIndexes.type = 0;
+                activeTimeColor = 'white';
+                mainStripeOffset = 0;
                 return;
             }
 
-            row.addClass(stripeIndex % 2 === 0 ? 'program-row-white' : 'program-row-gray');
-            stripeIndex += 1;
+            var mainCell = cells.filter('[colspan="6"]').first();
+
+            if (!mainCell.length) {
+                return;
+            }
+
+            var mainCellIndex = cells.index(mainCell);
+            var cellsBeforeMain = cells.slice(0, mainCellIndex);
+            var cellsAfterMain = cells.slice(mainCellIndex + 1);
+
+            if (cellsBeforeMain.length) {
+                activeTimeColor = applyColumnStripe(cellsBeforeMain.last(), 'time');
+                mainStripeOffset = 0;
+            }
+
+            if (mainCell.hasClass('s12')) {
+                mainCell.addClass('program-session-cell');
+                mainStripeOffset = 0;
+            } else {
+                applyCellColor(
+                    mainCell,
+                    mainStripeOffset % 2 === 0
+                        ? activeTimeColor
+                        : (activeTimeColor === 'white' ? 'gray' : 'white')
+                );
+                mainStripeOffset += 1;
+            }
+
+            if (cellsAfterMain.length > 1) {
+                applyColumnStripe(cellsAfterMain.first(), 'room');
+            }
+
+            if (cellsAfterMain.length) {
+                applyColumnStripe(cellsAfterMain.last(), 'type');
+            }
         });
 //         App.initParallaxBg();
 //         FancyBox.initFancybox();
